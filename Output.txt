@@ -1,0 +1,920 @@
+GET ACCOUNT INSIGHTS
+
+API Response:
+{
+  "success": true,
+  "insights": [
+    {
+      "name": "reach",
+      "period": "day",
+      "title": "Accounts reached",
+      "description": "The number of unique accounts that have seen your content, at least once, including in ads. Content includes posts, stories, reels, videos and live videos. Reach is different from impressions, which may include multiple views of your content by the same accounts. This metric is estimated and in development.",
+      "total_value": {
+        "value": 1
+      },
+      "id": "17841457297615006/insights/reach/day"
+    },
+    {
+      "name": "profile_views",
+      "period": "day",
+      "title": "Profile visits",
+      "description": "The number of times that your profile was visited.",
+      "total_value": {
+        "value": 2
+      },
+      "id": "17841457297615006/insights/profile_views/day"
+    },
+    {
+      "name": "website_clicks",
+      "period": "day",
+      "title": "Website link taps",
+      "description": "The number of times that the link to your website was tapped.",
+      "total_value": {
+        "value": 0
+      },
+      "id": "17841457297615006/insights/website_clicks/day"
+    },
+    {
+      "name": "accounts_engaged",
+      "period": "day",
+      "title": "Accounts engaged",
+      "description": "The number of accounts that have interacted with your content, including in ads. Content includes posts, stories, reels, videos and live videos. Interactions can include actions such as likes, saves, comments, shares or replies. These metrics are estimated and in development.",
+      "total_value": {
+        "value": 0
+      },
+      "id": "17841457297615006/insights/accounts_engaged/day"
+    },
+    {
+      "name": "total_interactions",
+      "period": "day",
+      "title": "Content interactions",
+      "description": "The total number of post interactions, story interactions, reels interactions, video interactions and live video interactions, including any interactions on boosted content.",
+      "total_value": {
+        "value": 0
+      },
+      "id": "17841457297615006/insights/total_interactions/day"
+    },
+    {
+      "name": "likes",
+      "period": "day",
+      "title": "Likes",
+      "description": "The number of likes on your posts, reels and videos.",
+      "total_value": {
+        "value": 0
+      },
+      "id": "17841457297615006/insights/likes/day"
+    },
+    {
+      "name": "comments",
+      "period": "day",
+      "title": "Comments",
+      "description": "The number of comments on your posts, reels, videos and live videos.",
+      "total_value": {
+        "value": 0
+      },
+      "id": "17841457297615006/insights/comments/day"
+    },
+    {
+      "name": "shares",
+      "period": "day",
+      "title": "Shares",
+      "description": "The number of shares of your posts, stories, reels, videos and live videos.",
+      "total_value": {
+        "value": 0
+      },
+      "id": "17841457297615006/insights/shares/day"
+    },
+    {
+      "name": "saves",
+      "period": "day",
+      "title": "Saves",
+      "description": "The number of saves of your posts, reels and videos.",
+      "total_value": {
+        "value": 0
+      },
+      "id": "17841457297615006/insights/saves/day"
+    },
+    {
+      "name": "replies",
+      "period": "day",
+      "title": "Replies",
+      "description": "The number of replies that you received from your story, including text replies and quick reaction replies.",
+      "total_value": {
+        "value": 0
+      },
+      "id": "17841457297615006/insights/replies/day"
+    }
+  ]
+}
+
+FETCH INSTAGRAM POSTS
+
+API Response:
+{
+  "success": true,
+  "instagramUsername": "1us.er7",
+  "instagramAccountId": "17841457297615006",
+  "media": [
+    {
+      "id": "18051287588682273",
+      "like_count": 0
+    },
+    {
+      "id": "18093284554908308",
+      "like_count": 0
+    },
+    {
+      "id": "17895277860367918",
+      "like_count": 0
+    },
+    {
+      "id": "17907518694284954",
+      "like_count": 2
+    },
+    {
+      "id": "18075463385356108",
+      "like_count": 2
+    }
+  ],
+  "paging": {
+    "cursors": {
+      "before": "QVFIUzhUTjFBYjFqbHhtUnRlQ2N0VS1qaXRQNlRoaVJtM1VPZAHRIcUJkVERXZAzAwYVk2OFplQlBiWkhpZAVJYak5MR0tvdk1SRk4tY1VsT08zOGRpOWpDZAmhB",
+      "after": "QVFIU1U2dmZApY3I2Q0Q4b2p2SERiSVNRVFJhTWxacjVOZAlRCdS1ka1JxVTBJSkNjVzJTa25qeHM0LS01MnBPdC1oaGhPTEZAsZAkpzR2FLN2lhSVhrZAUVmTHFn"
+    }
+  }
+}
+
+GET ACCOUNT STORIES
+
+API Response:
+{
+  "success": true,
+  "stories": []
+}
+
+GET TAGGED MEDIA
+
+API Response:
+{
+  "success": true,
+  "tagged": []
+}
+
+ACCOUNT INSIGHTS (TIME PERIOD) INPUT=DAY
+
+API Response:
+{
+  "period": "day",
+  "metricsAvailable": "reach, profile_views, website_clicks, accounts_engaged, total_interactions, likes, comments, shares, saves, replies",
+  "data": {
+    "success": true,
+    "period": "day",
+    "insights": [
+      {
+        "name": "reach",
+        "period": "day",
+        "title": "Accounts reached",
+        "description": "The number of unique accounts that have seen your content, at least once, including in ads. Content includes posts, stories, reels, videos and live videos. Reach is different from impressions, which may include multiple views of your content by the same accounts. This metric is estimated and in development.",
+        "total_value": {
+          "value": 1
+        },
+        "id": "17841457297615006/insights/reach/day"
+      },
+      {
+        "name": "profile_views",
+        "period": "day",
+        "title": "Profile visits",
+        "description": "The number of times that your profile was visited.",
+        "total_value": {
+          "value": 2
+        },
+        "id": "17841457297615006/insights/profile_views/day"
+      },
+      {
+        "name": "website_clicks",
+        "period": "day",
+        "title": "Website link taps",
+        "description": "The number of times that the link to your website was tapped.",
+        "total_value": {
+          "value": 0
+        },
+        "id": "17841457297615006/insights/website_clicks/day"
+      },
+      {
+        "name": "accounts_engaged",
+        "period": "day",
+        "title": "Accounts engaged",
+        "description": "The number of accounts that have interacted with your content, including in ads. Content includes posts, stories, reels, videos and live videos. Interactions can include actions such as likes, saves, comments, shares or replies. These metrics are estimated and in development.",
+        "total_value": {
+          "value": 0
+        },
+        "id": "17841457297615006/insights/accounts_engaged/day"
+      },
+      {
+        "name": "total_interactions",
+        "period": "day",
+        "title": "Content interactions",
+        "description": "The total number of post interactions, story interactions, reels interactions, video interactions and live video interactions, including any interactions on boosted content.",
+        "total_value": {
+          "value": 0
+        },
+        "id": "17841457297615006/insights/total_interactions/day"
+      },
+      {
+        "name": "likes",
+        "period": "day",
+        "title": "Likes",
+        "description": "The number of likes on your posts, reels and videos.",
+        "total_value": {
+          "value": 0
+        },
+        "id": "17841457297615006/insights/likes/day"
+      },
+      {
+        "name": "comments",
+        "period": "day",
+        "title": "Comments",
+        "description": "The number of comments on your posts, reels, videos and live videos.",
+        "total_value": {
+          "value": 0
+        },
+        "id": "17841457297615006/insights/comments/day"
+      },
+      {
+        "name": "shares",
+        "period": "day",
+        "title": "Shares",
+        "description": "The number of shares of your posts, stories, reels, videos and live videos.",
+        "total_value": {
+          "value": 0
+        },
+        "id": "17841457297615006/insights/shares/day"
+      },
+      {
+        "name": "saves",
+        "period": "day",
+        "title": "Saves",
+        "description": "The number of saves of your posts, reels and videos.",
+        "total_value": {
+          "value": 0
+        },
+        "id": "17841457297615006/insights/saves/day"
+      },
+      {
+        "name": "replies",
+        "period": "day",
+        "title": "Replies",
+        "description": "The number of replies that you received from your story, including text replies and quick reaction replies.",
+        "total_value": {
+          "value": 0
+        },
+        "id": "17841457297615006/insights/replies/day"
+      }
+    ]
+  }
+}
+
+SEARCH HASHTAGS INPUT=HASHTAG
+
+API Response:
+{
+  "success": true,
+  "hashtags": [
+    {
+      "id": "17841599602079878"
+    }
+  ]
+}
+
+HASHTAG TOP MEDIA INPUT=COFFEE
+
+API Response:
+Found hashtag ID: 17841562438105667
+
+Fetching top media...
+
+API Response:
+{
+  "hashtag": "#COFFEE",
+  "hashtagId": "17841562438105667",
+  "topMediaCount": 25,
+  "topMedia": [
+    {
+      "id": "17939850510099550",
+      "caption": "Dose of the day and just chill..\n#coffeegram mmmm.mlg",
+      "media_type": "IMAGE",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/604179782_18547033840017487_5029885336819420036_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=qFCH04QFiOAQ7kNvwEyTpEK&_nc_oc=AdmdvKhaQ0i91pAdxm_oKD8KPsGvtfkKnfAxBitNUML07DRLEAKa39m6Lz_caHh53DfONN-ac72DZehnOCfWF4Ap&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_AfmSTe79WUWxb-i4Fjx2H6Tz4L4AAFtLJx5NIFlVvbghFg&oe=69547AA6",
+      "permalink": "https://www.instagram.com/p/DSo3_cskxu9/",
+      "timestamp": "2025-12-24T07:58:40+0000",
+      "comments_count": 2
+    },
+    {
+      "id": "18005519717827490",
+      "caption": "Roothna wahan jaha manane wale ho,\nWarna log tumhari khamoshi ko\n“free trial” samajh lete hain.\n\nYahan log galti bhi confidence mein karte hain,\nAur expect karte hain ki tum\nMaturity ka certificate le aao.\nSorry optional hota hai,\nPar tumhara samajhna mandatory.\n\nIs duniya mein ek rule hai\nJo zyada feel karta hai, wahi zyada samjhta hai.\nAur jo kam feel karta hai,\nWahi khud ko mature bolta hai.\n\nIsliye ab roothna bhi soch samajh kar hota hai,\nHar jagah dil kholna risk hota hai.\nRoothna waha jaha manaya jana aadat ho,\nWarna yahan toh log\nTumhari khamoshi par bhi\nApna haq jata dete hain.\n\nbombayiranicafe_ ❤️\n\n#poem #coffee #bombayiranicafe #cafe #trending #poetry #ɪɴsᴛᴀɢᴏᴏᴅ #photooftheday #fyp #art #picoftheday #retro #vintage #explore",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/604896978_18543143905026485_3212430277281843964_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Nprk7B5nEKYQ7kNvwFX8DwW&_nc_oc=AdlUNlyjEQVGZOUJK4IqTGKV_K8xp29CKxi5hoq9Wn0llVoah4R1XKGjTR7VJbNj6hjSggSrQydhjuVotJ50bR6d&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_AfndZrYpUqadLnL-nnPmt-xKTGcg9uXXG1hjAxKXY1gj7g&oe=69546B37",
+      "permalink": "https://www.instagram.com/p/DSuZ1-kiKJD/",
+      "timestamp": "2025-12-26T11:30:00+0000",
+      "like_count": 295,
+      "comments_count": 10
+    },
+    {
+      "id": "18088573376075413",
+      "caption": "🤎🤎👌🏻.\n.\n.\n.\n.\n.\n.\n.\n.\n#coffee #قهوة #تصوير #explorepage✨",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/605631006_17943281952094923_1009281876580723800_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ziGvCOpjv1wQ7kNvwEESM0P&_nc_oc=Adkwjlt4ZAUE6h94wsFwWYdyvAMks4ncl9luXYFpb9LXxlotLcqcRzlac3L3zgDFErUYIZyCHO8RdJdtu6QBh2kM&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_AfmQCCWX9E1y68aNzLu1eTs2pNgzxgtG9UlCfRUEi22_Yw&oe=695473BB",
+      "permalink": "https://www.instagram.com/p/DSr0KYoDT2G/",
+      "timestamp": "2025-12-25T11:22:56+0000",
+      "like_count": 369,
+      "comments_count": 69
+    },
+    {
+      "id": "17911105803267552",
+      "caption": "역시🌿🌿\n.\n.\n#라떼아트",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/605095565_18546258802055169_8598684362433250575_n.heic?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=9emZVgfxTC0Q7kNvwEC5Bis&_nc_oc=AdkDkGPM54x8q6Un9L8rDggKobyrNex08aIL_8FSsyj0Wyt5_ivtf_JLCd0RQPCHufnhdpffL8bfNrnGN9U2oW11&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_AflIC4ZcaeLoQDkgT5982-nehMlzVXAP2IMAWXiYMeLKkQ&oe=69545757",
+      "permalink": "https://www.instagram.com/p/DSpDQVsD6xj/",
+      "timestamp": "2025-12-24T09:37:06+0000",
+      "like_count": 319,
+      "comments_count": 32
+    },
+    {
+      "id": "17860589475500862",
+      "caption": "قرارمون با خودمون همینه…\nهمین‌جا، پشت یه میز کوچیک\nبا یه فنجون قهوه‌ی داغ\nبی‌عجله، بی‌خبر از شلوغی بیرون\nفقط خودمون و چند دقیقه آرامش..",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/607438119_18553758676035171_2737313471866892678_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=xQrA_1yatKsQ7kNvwE3kxkk&_nc_oc=Adlk03-yrYlFxFiK26K7U590yBWUf6dPUANkfx3mwRdWuAFcHWPEOIbyyLgs52yjH2zNqee7CT-NJPmz1crVbTgx&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_Afl830sQOST-rMNhjfwgQuNn-8ZuXEwZg4C1PbmINqo4bA&oe=69546C75",
+      "permalink": "https://www.instagram.com/p/DSt7b0LDE3r/",
+      "timestamp": "2025-12-26T07:04:58+0000",
+      "like_count": 967,
+      "comments_count": 141
+    },
+    {
+      "id": "18053267228349459",
+      "caption": "Le ponemos el corazón entero a todo lo que hacemos! ☕☕☕\n.\n#cafe #coffee #coffeetime #cafesvida #cafeadictos #cafeteamo #cafecito #cafedelamañana #adictosalcafe #coffeelover #buenosdias #breakfast #goodmorning #coffeegram #coffeeaddict #instacoffee #espresso #becool",
+      "media_type": "IMAGE",
+      "media_url": "https://scontent.cdninstagram.com/v/t39.30808-6/599104130_852007857802407_4720770129649904218_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=TmhKJ7fXV-YQ7kNvwHIK-9L&_nc_oc=AdmERgjFgz7RVSm9M0XJKJO6v8sdgsLgfTZWlAGiLX1cX5gWGvR8A93FOMspzFh_iKSW5jvdUipXnCC1JQlKGbO6&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_AfmYdqU12fl8YGheQpWL7fZ-pxoa_2KvfLt7zlaEJuQo1w&oe=69547BD2",
+      "permalink": "https://www.instagram.com/p/DSZpJPUGHa6/",
+      "timestamp": "2025-12-18T10:00:20+0000",
+      "like_count": 515,
+      "comments_count": 12
+    },
+    {
+      "id": "17916444204246509",
+      "caption": "⠀\n‏عندي قناعة تخليني أشوف كل شي خيره من الله وأقول على كل شي الحمدلله ، حسن الظن اللي يخليني أثق إنه الله دايمًا راح يعطيني الأفضل والأجمل والأحسن، الرضا اللي عودت قلبي عليه، وأدري حياتي مكتوبة من قبل ما أنخلق واللي مكتوب لي فوق سابع سما راح اخذه.\n\n#coffee #kuwait #360mall #swisswatch #audemarspıguet #luxurylifestyle #watchaddiction",
+      "media_type": "IMAGE",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/603136136_18544386211013673_4516425905933789313_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=NpDBI6wC1KkQ7kNvwG90tow&_nc_oc=Admc34GOCIe3HJCatkzdIptgy3Za_96y1HCvXpn7tgf3rSlqxTnAhWSCltqtyj4K6lfzrjtBMx-gI_NewAQ9ApiP&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_Afm7fbulvFr_ygzKQaYugotsM2-CUes0HbBDG0yNVx1mVw&oe=69545CFB",
+      "permalink": "https://www.instagram.com/p/DSfiwoJjElw/",
+      "timestamp": "2025-12-20T16:59:59+0000",
+      "like_count": 529,
+      "comments_count": 0
+    },
+    {
+      "id": "17945684322089023",
+      "caption": "When you needed a quick photo.. 😂 \nMy plotter narrow planner is my main planner. I always just leave it open above my desk and update it from time to time throughout the day. My favorite thing is going home and seeing my desk looking neat and organized.. feels like my life is put together 😊 I am enjoying this 6mm insert and turned it into daily pages and journaling! I am ready for 2026! \n\n #journal  #plannerph #planner #coffee #journalinspiration",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/604130492_18549009469027220_2569333666331509602_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=6A6wKeORCGIQ7kNvwFZqZc0&_nc_oc=AdnTbNala4SnxDEajiPDq37ad2E9Z-IG9C36gUreRUVYoIcisg-Hl9cY_bU5wLAVr8s_n_8tSD_zjVAqC40qzTdq&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_AflcFq8oLjXGkcKfXiNpciwz5yI1aU7k84X2pfuAe2GWfA&oe=6954739C",
+      "permalink": "https://www.instagram.com/p/DShpDWZDHFr/",
+      "timestamp": "2025-12-21T12:33:27+0000",
+      "comments_count": 3
+    },
+    {
+      "id": "17870608785496621",
+      "caption": "Ambience, wow, taste of food touch my heart…♥️\n.\n.\n.\n.\n.\n.\n#chai #tea #chailover #teatime #tealover #tealovers #chailovers #love #food #foodie #chaitime #india #chaitea #coffee #teaaddict #instagood #chailove #instagram #foodphotography #masalachai #foodporn #foodblogger #indianfood #blacktea #greentea #tealove #photography #chaiislove #shayari #indiantea",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/602463486_18085983257101227_7509209286411040167_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=103&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=9azq18OFByYQ7kNvwFkZqTi&_nc_oc=Adn4R_nLpKjkVt_OxSkC6LBuQi3mrvBoz7FtZNSHX7JuxjV_zCdi_r9Z0MlVpSHlmeBJDj46BAXCjGLG4R6-GTMU&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_AfkLxc8KNF7Zr6wVTfgs0SX3X9_ZNz8eAGN7sVj9cOVeWA&oe=695455E8",
+      "permalink": "https://www.instagram.com/p/DShyer9D5SC/",
+      "timestamp": "2025-12-21T13:55:49+0000",
+      "like_count": 500,
+      "comments_count": 3
+    },
+    {
+      "id": "18104904289676233",
+      "caption": "Claro que si! ☕☕☕\n.\n#cafe #coffee #coffeetime #cafesvida #cafeadictos #cafeteamo #cafecito #cafedelamañana #adictosalcafe #coffeelover #buenosdias #breakfast #goodmorning #coffeegram #coffeeaddict #instacoffee #espresso #becool",
+      "media_type": "IMAGE",
+      "media_url": "https://scontent.cdninstagram.com/v/t39.30808-6/597178230_848407781495748_5546790759842594260_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=cYNfwZLiWUEQ7kNvwHY6ih_&_nc_oc=AdkPpjblFgHJfbAnlD13kZD8ME8Nj1P-GfYX5i7ZTF654p9tMzO3Y43h0U3YiqgMO1FzkwciWHN8bAPFEbeD31q8&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_AfnbxV3E2qLBzQXSJ9G3FdXx5BEzm_pnUczj-Gc5nRanwg&oe=69547D35",
+      "permalink": "https://www.instagram.com/p/DSPV9i1AUdJ/",
+      "timestamp": "2025-12-14T10:00:19+0000",
+      "like_count": 1280,
+      "comments_count": 14
+    },
+    {
+      "id": "18548295130015020",
+      "caption": "🎄GIVEAWAY🎄\n\nTogether with bodum I’m giving away MOMA collection coffee set: a stylish, high-quality set perfect for enjoying and serving your favorite coffee in design-forward elegance.\n\nHow to enter:\n– Follow bodum & jannis_ft\n– Like & save this post\n– Comment where you would place it and feel free to tag friends in the comments who would also like this coffee set.\n\nIt ends on the 27th of December at 11:59 PM. The winner will be chosen at random and notified via DM. Good luck!\n\nBy participating, you agree that your data (e.g., name and shipping address) may be used for the purpose of selecting and contacting the winner and shipping the prize. The winner agrees that their address will be shared with the giveaway partner solely for shipping purposes. This giveaway is not sponsored, endorsed, administered by, or associated with Instagram. The prize is non-transferable and cannot be exchanged for cash. Legal recourse is excluded.\n\n-ad \n#coffee #interior #interiordesign #giveaway #decor",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/603587064_18559372906016643_707868670705371838_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=TimOzQzTA3kQ7kNvwH2GjPv&_nc_oc=AdmrdsRoWT9zAIsAJmKLrdprO2jszvLx6Xpn_Bh20UtVwtmyT8QUwsejrUFjF_kYWaQdPnfQRXV0iBqdGegSwA9T&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_AfmWFIaG4gTcPpwEnRMEaClzlIdku_etr2Dbh73OcXXqlg&oe=69545D25",
+      "permalink": "https://www.instagram.com/p/DSiHwL6DQnd/",
+      "timestamp": "2025-12-21T17:01:43+0000",
+      "like_count": 1740,
+      "comments_count": 1764
+    },
+    {
+      "id": "18085434650097513",
+      "caption": "به راه بادیه رفتن به از نشستن باطل و این صحبت ها 📖✏️📚˚꩜｡⊹₊⟡⋆",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/586864955_18551394313012012_5391003022282861158_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=5IX6lIHhSRAQ7kNvwHc8U5b&_nc_oc=AdkQPDmybmToFtPfCNd5Sc-zAhvxDErYP8POhs-W3vZqWisYwBZNayGlrEQETFgNmkAMQp_ugzwPa9Ptfs0DbrV8&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_AfnHdT7OEDMbTYUKUPSykHAXzirNCOZ-ZujXQ_l9T4JUlg&oe=6954651F",
+      "permalink": "https://www.instagram.com/p/DSSGmOVCkYE/",
+      "timestamp": "2025-12-15T11:43:46+0000",
+      "like_count": 577,
+      "comments_count": 8
+    },
+    {
+      "id": "17973140723970866",
+      "caption": "#EVENT 𝗠𝗘𝗥𝗥𝗬 𝗖𝗛𝗥𝗜𝗦𝗧𝗠𝗔𝗦🎄\r\n\r\n크리스마스 도넛의 정석은\r\n역시 던킨이야 ♡( ◡‿◡ ) 끄덕\r\n\r\n존재 만으로 크리스마스 분위기 완성!\r\n진한 초코 코팅과 알록달록 윈터 스프링클이 달콤한\r\n#윈터_빅_보스톤_크림\r\n#윈터_카카오_후로스티드\r\n\r\n사진 찍고 있는데 한입 먹으면 어떡해!\r\n크림이 너무 달콤해서 참을 수 없었어ᴗ̥̥ .̼ ᴗ̥\r\n\r\n크리스마스에 가장 먹고 싶은 던킨 도넛을\r\n댓글로 남겨주는 던키니들에게\r\n던킨 산타가 선물을 줄게🎅🏻🎁\r\n\r\n✅ 기간 : 12/25(목) ~ 12/31(수)\r\n✅ 경품 : 던킨 모바일 교환권 1만원권 (10명)\r\n✅ 친구 태그하면 당첨 확률 UP!",
+      "media_type": "IMAGE",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/590391479_18521413351067367_663749082353083819_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=mcaUjAwaIWUQ7kNvwF6tlx6&_nc_oc=Adkb5qD0DO8weh430v0P1CVnfP7PFAJC5isyvwz0fciJzGhPJRAmF-a_HDaozZlZyFQLb7596eqV4fWX3oxmCOpk&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_AflwPVOj8dtrBjkROwyY_O-5f6K9KGyT9htltxxq2vOh-g&oe=69547B07",
+      "permalink": "https://www.instagram.com/p/DSqwVGBge4G/",
+      "timestamp": "2025-12-25T01:30:00+0000",
+      "like_count": 878,
+      "comments_count": 811
+    },
+    {
+      "id": "17920093467218416",
+      "caption": "Coffee date with my toddler, slow city strolls & cozy moments ☕️🤎✨🍪\nLook stradivarius \n.\n.\n.\n.\n.\n.\n#coffee #coffeedate #cafe #ootd #outfitinspo #stylei̇nspo #winteroutfit #aesthetic #girlythings #cozyvibes #christmasdecoration #inspo #stradivarius #stradilooks",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/606492790_18545084026029507_6492587154924178127_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=L_Pq6R6x-LYQ7kNvwEEgQgz&_nc_oc=AdnuzHeqqWX77SvOYdwmSQdoo52b83OZgeJTzrc0W29JAssxEGyv7t_cUORIstwUYZkz2x7QEgE1ma-VGahzeYap&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_AfkU3-kDJE8XUF67jfrSf-juQJHpgpsw_pXzPuN4GuHWEQ&oe=69547923",
+      "permalink": "https://www.instagram.com/p/DSpJk6xDSOh/",
+      "timestamp": "2025-12-24T10:32:20+0000",
+      "like_count": 600,
+      "comments_count": 41
+    },
+    {
+      "id": "18100135144831868",
+      "caption": "#ghostface #coffee #christmas #spooky #chibi",
+      "media_type": "IMAGE",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/604411815_18543437620055316_1028497218756147271_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=PcOX7aE4HAgQ7kNvwF8-4lA&_nc_oc=Adka6v22D52QrtJBoMbtr9GTdLNhbEO3uzODVrU4se_YyTft4gcHHobbj3iV2Lv8QSVkIPJo69RwBqQO8_68_b1L&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_AfmzzpRTRFQySl-DvB7mcyTLOLdiTwAvn8xeSr3LUD0itg&oe=695465E5",
+      "permalink": "https://www.instagram.com/p/DSh153pDMhu/",
+      "timestamp": "2025-12-21T14:25:45+0000",
+      "like_count": 1022,
+      "comments_count": 7
+    },
+    {
+      "id": "18166670893377416",
+      "caption": "~ Malacca Coffee ☕ & Ais 🍧 ~\n\n🎄⛄☃️❄️❤️\n\n🍀🥢🔴🟢\n\n🎄☃️🎉\n\n🟥🟨\n\n🎄\n\n🟢\n\n🟡\n\n💚\n\n❤️\n\n🎄\n\n🍀\n\n#lunch \n#ランチ\n#dinner \n#夕食 \n#coffee",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/606064922_18099744094858081_1809550510870118613_n.webp?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=6lEfVThUyUIQ7kNvwG2Vxid&_nc_oc=AdkRVW3tjm5OU-GeorAz2RUf-z6UdQdk_DN-56CiRp3CEyDOEUUH-Hwc5q4_7-30HunDADC7aoicESZZBmZxm0xg&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_AfldF8YfsH1JbGWbYpnuAkGBmmsEI8imarfG_gSvbTy0Bg&oe=69547F0D",
+      "permalink": "https://www.instagram.com/p/DStWh6GEmn_/",
+      "timestamp": "2025-12-26T01:42:29+0000",
+      "like_count": 313,
+      "comments_count": 27
+    },
+    {
+      "id": "18107835418651511",
+      "caption": "Tu hai chiji meri 🙈\n#raniishika \n#ishikaura \n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n#starbucks #coffee #chiji #chijimeri❤️😋 #viral #trending #followｍe #explorepage #reelstab #fypppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/590380343_17918710470230229_3201482359464760104_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=0JizEGXW61gQ7kNvwFOL_eZ&_nc_oc=AdlwtRJg619b7LGkZdBXdNM6a0cBR-lPUP50gMy4vHigNOq4a5UblzH9-XV3_Pr10-u_TOkeIM0CWe2GUaCjhiq0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_AfkUW3FFFAIPpZChuu3VhR_AqM0gNLduQ23C8nTdhRcC-Q&oe=69547F4F",
+      "permalink": "https://www.instagram.com/p/DSU3c7YAdM5/",
+      "timestamp": "2025-12-16T13:29:09+0000",
+      "like_count": 694,
+      "comments_count": 464
+    },
+    {
+      "id": "18069615362109540",
+      "caption": "“To play a wrong note is insignificant; to drink a bad coffee is inexcusable.” #coffee #coffeeholic #coffeeislife #mornings #piano",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/604922305_18537891028046016_1029717453566284852_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=TVcrrsAW8iUQ7kNvwHkbfiR&_nc_oc=Adl9ATvYRNbaG_eHcTsinnXiQtxJWUhwKYXFfZAhPk1iyO_MyqtUtwnC8wOdTOmQ0xyeseQwqWsBqmvAY7emao3N&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_AfmoK-vxTQ9stMiqkc1tKY7QdTv3kdh00QGtvWClvA8pnw&oe=69545BE2",
+      "permalink": "https://www.instagram.com/p/DSnAVe1DWzd/",
+      "timestamp": "2025-12-23T14:33:06+0000",
+      "like_count": 2609,
+      "comments_count": 4
+    },
+    {
+      "id": "17895030381367419",
+      "caption": "Screen Caps #kaley #cuoco #kaleycuoco #tbbt #new #lol #throwback #girl #beauty #beautiful #love #celebrity #actress #star #amazing #pretty #gorgeous #penny #caps #bigbangtheory #fan #morning #funny #flightattendant #cassie #hello #coffee #woman #bonjour",
+      "media_type": "IMAGE",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/605450207_18298776331257700_5072918368351683083_n.webp?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=RqmtDLDFxXMQ7kNvwESH834&_nc_oc=Adnmwd7VR6sbfFB9PlDlYnuBSTHs_8lmQqoQPM1y-kHgDoooxxWc3WRriQ8Byku_OetRTEVxXJHRQJazzFf6SnDd&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_Afm1DPr_SoBJbuORwtfPYO5juGuL0KlhP8dTgyxeMK0OWA&oe=69546677",
+      "permalink": "https://www.instagram.com/p/DSrP4D8CD3y/",
+      "timestamp": "2025-12-25T06:05:51+0000",
+      "like_count": 531,
+      "comments_count": 8
+    },
+    {
+      "id": "18103853770706118",
+      "caption": "2025.12.23 Tue\n\n#朝ごはん\n\n・バナナッツとハムのトースト\n・さつまいもとささみの豆乳酒粕スープ\n\n#パンとスープ #スープ #soup\n#トースト #金の食パン #パンが好き\n\nお腹も満たされたし動きますか💪",
+      "media_type": "IMAGE",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/604244839_18549577399005895_8673038109371170059_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=d-qrAE9X-oUQ7kNvwEXWOIj&_nc_oc=AdlWcWrcc5SnF_MIbX7_TwJkaIIw-cP6Qa5Wk0tFC2a8T7PUOD-QTwa7F91qj6fuZgb6T5NHwGQAOs1tCHTWNv7b&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_Afk9ci-SuaoUtWncUdm9D3F8wwTQeQrJBS6hZfGZvmEEDw&oe=69545CFB",
+      "permalink": "https://www.instagram.com/p/DSlYGo7ksxS/",
+      "timestamp": "2025-12-22T23:22:19+0000",
+      "comments_count": 3
+    },
+    {
+      "id": "17942794785023631",
+      "caption": "H y v ä ä huomenta ☕️🎄🎀 +1°\nG o o d morning 🎀🤍☕️ +1c\n____________________\n#hyväähuomenta #godmorgon #godmorgen #goodmorning #coffeecup #coffee #coffeetime #kaffe #kahvi #kahvihetki #morningcoffee #coffeelove  #jul #joulu #christmas",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/587785399_18538117783054469_4743575333703450985_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=4CC8ujaf-JoQ7kNvwG7bIZE&_nc_oc=AdnRtiA819XntPoPxzK-7G3W3VQNRslOVLBT2t4hsXhEIcNvYKfy59Mu-fzvWwNCLtmBCgD0RJ0dAgA4B4-WIqZm&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_AfmK3I8vl1LfLWq47GCuGs_SZj4Ybv_juArL6Qum5goljA&oe=69546299",
+      "permalink": "https://www.instagram.com/p/DSZH8PqCBdO/",
+      "timestamp": "2025-12-18T05:10:12+0000",
+      "like_count": 656,
+      "comments_count": 40
+    },
+    {
+      "id": "18156504490410652",
+      "caption": "𝒸𝑜𝒻𝒻𝑒𝑒 𝒹𝒶𝒾𝓁𝓎 🤎ྀིྀི ♡ ˙✧˖°☕ ༘ ⋆｡˚ \n\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n#aesthetic #ａｅｓｔｈｅｔｉｃ #coffee #coffeeholic #coffeeislife #pinterest #homedesign #home #homedecorlovers #homestyle #design",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/603872082_18543850972027558_3045667459973682286_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=xyjMa_lgmW8Q7kNvwEGWQxa&_nc_oc=AdnvUM3rwmdyv4X0_stcNfIazAWbChDOt2gpYx5HKmd0tWMXRTDULAsCQmONFi89bRHiWfvoUr25W0oZQ2RCGsMq&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_AfkLJq3I63koAdVG0Sv-GwEHnwOCcZ_0IFYL5lYh3vXKrA&oe=6954615F",
+      "permalink": "https://www.instagram.com/p/DSh7JWOjJMx/",
+      "timestamp": "2025-12-21T15:11:33+0000",
+      "like_count": 423,
+      "comments_count": 19
+    },
+    {
+      "id": "18098583883830007",
+      "caption": "I remember.. way back 2018-2020 when making dashboard for planner rings was a trend! Fast forward to today.. I saw how our style evolves.. but me, I stay being maximalist in using stickers and decors.. because it makes me really happy! I tried to make cute dashboards todays and decorated it in such a way.. I will never get tired of looking at it! Its gonna stay with me for the whole year! \n\nI am gonna use Narrow size planner (A6 Slim in wuzhi_studio ) for 2026! It gives me the vibes of TN and rings at the same time! Some people feels like its too small for them.. but not for me. \n\nMy set up is the same: Monthly (whole year) weekly and daily (6mm grid from plotter_usa ) and some paper for notes!\n\nHopefully, I will stick around to this planner for a year (or no) 😁😁 Only a planner girl can understand. \n\n#journal  #plannerph #planner #coffee #journalinspiration  #plan #plotternarrow #plotter #A6slim #ringplanner #planneraddict",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/602709103_18548490496027220_7762380801246813490_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Z118rphQrHAQ7kNvwFoiWBU&_nc_oc=AdkI-g0dXAuB054DGXgrODL5NZaDmQ9NvvZDCj86ZWeOwlaU2K4lv_47iPpyV6twYjFB1TqQFkiIKPO5m-BC6QV4&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_AflcgEAqpg6zUSAGXHPgnNuuoS-qDKuESK9udxC8zJGjCQ&oe=695483AE",
+      "permalink": "https://www.instagram.com/p/DSZ45WwDDtr/",
+      "timestamp": "2025-12-18T12:17:58+0000",
+      "comments_count": 8
+    },
+    {
+      "id": "18392431276177074",
+      "caption": "❤️\n\n#home\n•\n#christmas #stove #kitchen #coffee",
+      "media_type": "IMAGE",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/605759229_18276076504303213_8636431793681338502_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=YmATIttN7KEQ7kNvwGz8bRx&_nc_oc=Admgm1vh5bJcTv_M01zZVtXJqn_16MSFP6n7Gw2SdaGdv2kZjTeYUMEr9g3PXp3gjFSop_7rC5VjY4n3W1mjj2zE&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_AfmetIo-yCPfeKN8Jp5QWbNJAjdTNUaFFHtGSd4TL808xw&oe=69547BEC",
+      "permalink": "https://www.instagram.com/p/DSryOWZDEwF/",
+      "timestamp": "2025-12-25T11:06:00+0000",
+      "like_count": 309,
+      "comments_count": 12
+    },
+    {
+      "id": "18081671345468239",
+      "caption": "Two adults and two children were taken to hospitals after a family's vehicle drove through a coffee shop in Gorst on Wednesday night, according to the Washington State Patrol.\n\nThe driver, a 47-year-old man from Bremerton, was driving his family when he suffered a medical emergency. The vehicle veered off the road and slammed into G.O.A.T. Coffee Co. near a Subaru dealership.\n\nThe SUV was carrying a 47-year-old woman, an 8-year-old girl, and a 5-year-old boy.\n\nThe collision destroyed the small building and totaled the vehicle.\n\n🔗 in bio for the full story.\n\n#komo #komo4 #komonews #komo4news #seattle #washington #crash #collision #coffee #coffeestand #coffeeshop #christmaseve",
+      "media_type": "IMAGE",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/606245258_18547507354033892_1607161643375265038_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=i65FbYVuJfoQ7kNvwGBmUJZ&_nc_oc=AdlzGRcgwFTWAaANaGbDdEI0aAywq1s9jRwGREWObIz1MSTrriWMMXDUSHmFWcUG8HUGmsjwh9ocHF62WTA8y1SF&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=APCawUEEAAAA&_nc_gid=yqP4iirRr76EcixYxelTAw&oh=00_AflMaNbywEn-6wedcV9ug9DMVL149ziQr7C-N9htCuzsoA&oe=69545AF3",
+      "permalink": "https://www.instagram.com/p/DSstn-lEQY1/",
+      "timestamp": "2025-12-25T19:45:08+0000",
+      "like_count": 567,
+      "comments_count": 13
+    }
+  ],
+  "paging": {
+    "cursors": {
+      "after": "YjJmNWQ3MjVjNWUxNDRhODk4ODAyZAWU1YmMzN2QwNDkZD"
+    },
+    "next": "https://graph.facebook.com/v24.0/17841562438105667/top_media?user_id=17841457297615006&fields=id%2Ccaption%2Cmedia_type%2Cmedia_url%2Cpermalink%2Ctimestamp%2Clike_count%2Ccomments_count&limit=25&access_token=EAATy5aHCzPsBQfAAwpB2ujyKDGMvWPC8bphWZAH1hcffXZAV96ZB8lVPJ2BcK5n67EKmQpV0LFLWTJFaw0MInXDYF5lBlDg3laKfqKNtYXOHVPsVQeDz9pY87I1I4vpKn3stmay8fE1kMXIxYTUtVN8pmt78uqTJZBKpLXcZATErHBcQLzV6FlJWL6fwExAyWLFCL&after=YjJmNWQ3MjVjNWUxNDRhODk4ODAyZAWU1YmMzN2QwNDkZD"
+  }
+}
+
+HASHTAG RECENT MEDIA INPUT=COFFEE
+
+API Response:
+Found hashtag ID: 17841562438105667
+
+Fetching recent media...
+
+API Response:
+{
+  "hashtag": "#COFFEE",
+  "hashtagId": "17841562438105667",
+  "recentMediaCount": 25,
+  "recentMedia": [
+    {
+      "id": "18077531315002303",
+      "caption": "love such days 💓 \nthe place to go for a break koethekafe \nHad berry matcha & coffee was 10/10 🌟\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n(aesthetic, cafes , surat , matcha , viral\nreels, Instagram, zindagi meri dance dance\nreels viral, fyp, suggested , coffee,\ngirls, therapy , brownie , friends,\ntrending audio , fit check , outfit, plants\naesthetics,dayout) \n#coffee #matcha #break #dayouts  #cafe #coffeehouse #reelitfeelit #surat #suratcafe #ifc #trending  #fyp #reelsinstagram #viralreels #explorepage",
+      "media_type": "VIDEO",
+      "media_url": "https://instagram.fpnq13-6.fna.fbcdn.net/o1/v/t2/f2/m86/AQO7wN6bIl8k-0BnZ6on3q79-LBOOgDMKrhqi55tXNkEoOExNqFvOmoerEX8K9XKPTHVSYyV5tFiNkDURVQQljhXx_OP0z2wFehI3gg.mp4?_nc_cat=104&_nc_oc=Adn8l_dDBgzsu5cijCZqylcuInR7iWfAAzYPplyQ7mImO2IZWH-21X8puxydl68Edk2h6QyljqO8F6m-ZOlZD3VL&_nc_sid=5e9851&_nc_ht=instagram.fpnq13-6.fna.fbcdn.net&_nc_ohc=DQqUeKm7FfkQ7kNvwG2f0Rt&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTM2MTc1NjQwOTAzMjc5OSwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwODI3LCJkdXJhdGlvbl9zIjoxMiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&edm=AEoDcc0EAAAA&_nc_zt=28&vs=a90a2c9fbc31f3db&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC80ODQyQTc1QTAzMzk0MjBFRTM5QjVFQzg3MDI4NzI5Rl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HQ2FQTkNUcU03NXhfcmdKQUNYRno4VEdSYWRNYnN0VEFRQUYVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmvsG_8NOg6wQVAigCQzMsF0ApZmZmZmZmGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2WWqQEA&oh=00_AfkzoTsK_2OqvlLG6BUsWAhspeTpHl_VEi2yjQfaJw48VA&oe=695092BD",
+      "permalink": "https://www.instagram.com/reel/DSus_xKDF0Z/",
+      "timestamp": "2025-12-26T14:18:56+0000",
+      "comments_count": 0
+    },
+    {
+      "id": "17919525999221616",
+      "caption": "#vibes #coffee #morocco🇲🇦 #followme Do you like this vibes?",
+      "media_type": "VIDEO",
+      "media_url": "https://instagram.fpnq13-3.fna.fbcdn.net/o1/v/t2/f2/m86/AQOeyYyUIcOoqf9TtTRbu6LIwDxHl4ZFm5jl0CC15gcH-0pUmmqNDbeREJOgzlFnt-IcHuOujv_Qr_OEz1ARdBb-9tRll_StpT82pSA.mp4?_nc_cat=100&_nc_oc=AdmnzcT9qg1U3HD7ybBUFJNSKjY7HfKwEkT6NkzNbwBAnvU0RsQ_h6nq1e2L6tVspbIK2XyWLxFBIuvedfNsuWJF&_nc_sid=5e9851&_nc_ht=instagram.fpnq13-3.fna.fbcdn.net&_nc_ohc=Uun1WT-b1NkQ7kNvwE-3634&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNDgwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTQzNDU1NTcxODY3MDUxNiwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxMSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=8b49e3c42ba24fb3&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9CNjQ3NTc5QkZCRkZDQTE1RTc5MDI4MjEzNzQ1Qzk5MF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HRDJCQlNSOHQxS3ptTThDQUQ3Z0lDQktwclpvYnN0VEFRQUYVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm6OKsgJGujAUVAigCQzMsF0AnEOVgQYk3GBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2XmnQEA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_Afk2quT1srv15zcWlBWiq0N-NjmOlLs_HF4-P_kU1pcoQw&oe=69507C7D",
+      "permalink": "https://www.instagram.com/reel/DSusSteAlME/",
+      "timestamp": "2025-12-26T14:18:47+0000",
+      "like_count": 1,
+      "comments_count": 0
+    },
+    {
+      "id": "17982953153930087",
+      "caption": "#viralvideos #coffee #fypシ #fypシ❤️💞❤️ #العراق_السعودية_قطر_الامارات_الكويت_البحرين_اليمن_الخليج_سوريا_مصر_لبنان_الجزائر_تونس_المغرب_قطر_دبي",
+      "media_type": "VIDEO",
+      "media_url": "https://instagram.fpnq13-2.fna.fbcdn.net/o1/v/t2/f2/m86/AQMbwp_iy802C1Kp4I0oC7XQ_XtDIRJTUFfv5dIsT4fx5Zu-ZJLXZMIOh7OKW7sDLgpzAdcu7O0I8VT02XtVAiJCpUDRIpF3nAdyw-0.mp4?_nc_cat=111&_nc_oc=AdkXYLMCYacWlnL6CfladBzEQKYONxZXpcOdAUB4LodUCQlzxf-wKmalKAZd8Tr78vZ7pIzNU85JC4mGgEZRRcw0&_nc_sid=5e9851&_nc_ht=instagram.fpnq13-2.fna.fbcdn.net&_nc_ohc=UpS6YmO_uUQQ7kNvwETlrOQ&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MjUwNjk4NzgwNzkzODAwNDcsImFzc2V0X2FnZV9kYXlzIjowLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6MTQsInVybGdlbl9zb3VyY2UiOiJ3d3cifQ%3D%3D&ccb=17-1&vs=40b17a7101b306f0&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xRjQyODVGNjFGQTUwRjVEMjQxRkZCMjIyQzQ0NDBBM192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HREVQUGlSN2lLcjJHeGdGQU1OcWxRdk9hUkk2YnN0VEFRQUYVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmnunel_u6iFkVAigCQzMsF0AtAAAAAAAAGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2XmnQEA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_AflXTct0Ndbu16Y-F6YChSukjgu5KzbhIvkDwQeUS7R8wg&oe=69508448",
+      "permalink": "https://www.instagram.com/reel/DSutCKCDHL1/",
+      "timestamp": "2025-12-26T14:18:38+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "18388248226176087",
+      "caption": "#💸#🧋 \n.\n.\n.\n.\n.\n.\n#starbucks #coffee 🧋🤎",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/606980705_18036399728733733_1196992951991942208_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=VUD2xFkenxYQ7kNvwEHywS9&_nc_oc=Adm32smYMQOexOSmfCRIhzYdRRkRln-_5mP7esDnRx8Xt5AH8QISAaxMv-Q7_zPe1D450GxK55HOhCL4uenSIOM1&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AEoDcc0EAAAA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&oh=00_AfmV3w2sTrrvvu6qC4pNb2IT4Ltx-Yy88HfLyIu4RBymfQ&oe=695456CE",
+      "permalink": "https://www.instagram.com/p/DSutC2cD8xh/",
+      "timestamp": "2025-12-26T14:18:27+0000",
+      "comments_count": 0
+    },
+    {
+      "id": "17944290288089174",
+      "caption": "ASMR Unboxing | Electric Vacuum Bean Canisters With Digital Display by IKAPE 🖤☕🤌🏼\n\n🔥Check 🔗 Link in my bio👇🏼\n🎁20% IKPAE discount code: GoldenBean\n\n✅Like & Share with your coffee friend🤝🏻\n✅Check the link in my bio for discounts🎁\n✅Follow me for more coffee content☕🖤\n\n#asmr #ikape #coffee #coffeebeans #coffeelover",
+      "media_type": "VIDEO",
+      "media_url": "https://instagram.fpnq13-2.fna.fbcdn.net/o1/v/t2/f2/m86/AQOBKWt2X2MQsH47EIRCQqLWSQVuEEqQ_Rey1aNzSKunbgbDlLNbm6fMbkeA6jgAuCK7I6YBj6SHrzX-y1LzuaNjZm4SvWy6FAHM6pE.mp4?_nc_cat=101&_nc_oc=Adny2LemJIqgbiDF3OlzilbVZQ_i3e8NCiaM5ejGsqKq_M4JO2f2Da58SNk0fi-YG_oLamoO5eiezDvosKW9LmO0&_nc_sid=5e9851&_nc_ht=instagram.fpnq13-2.fna.fbcdn.net&_nc_ohc=CRRz0uoZtNoQ7kNvwHQqsIv&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6ODg1MjcyMDAwODU1ODU2LCJhc3NldF9hZ2VfZGF5cyI6MCwidmlfdXNlY2FzZV9pZCI6MTA4MjcsImR1cmF0aW9uX3MiOjYwLCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=3eecf45aac311768&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC85MDRGMjdEMjhGQTY3QkRBOTAxNzBFODVCNzFENDFBNl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HQnR3LUNNb3I5R1UyQm9JQUhYOEdRUTB0SThFYnN0VEFRQUYVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm4Pyfss7JkgMVAigCQzMsF0BN-6XjU_fPGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2WWqQEA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_AfmIXZxJMEwQ-bUftklSARx6msv_vpxd99I6Xv3E4BUZng&oe=69505E36",
+      "permalink": "https://www.instagram.com/reel/DSuseaMApbQ/",
+      "timestamp": "2025-12-26T14:18:20+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "17845251981635438",
+      "caption": "#icedcoffeelatte, anyone? #scentedcandle #coffee #coffeecandle #giftideas",
+      "media_type": "VIDEO",
+      "media_url": "https://instagram.fpnq13-1.fna.fbcdn.net/o1/v/t2/f2/m86/AQObhQO943zytKj_njo2HR2OamOyl96dBLu8x_cVpG96F_cl1HWWSBwXibBFkx6w6RItwz5Ggq_N2g_C7pHUkbwff-aE1Eb--fHf_eI.mp4?_nc_cat=107&_nc_oc=AdnvXh_AFMvCyqHXuwXyLpDFEmQKk5Atft3g6Qh7NsRRDzoBanGzzBKNE3pKhLUjh89GFOcXiE-HVXKQ90XfYFEZ&_nc_sid=5e9851&_nc_ht=instagram.fpnq13-1.fna.fbcdn.net&_nc_ohc=H8ABVC0Rn1EQ7kNvwHpOJJM&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MjY4OTE3MDI3NzM3NTIzNTIsImFzc2V0X2FnZV9kYXlzIjowLCJ2aV91c2VjYXNlX2lkIjoxMDA5OSwiZHVyYXRpb25fcyI6OSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=a03987452ab5edc8&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC81NjRCMThENENBRTNBQjlCRkNFNUFDNDJEN0JDQjFBNV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HTHJaSGlTTnJSRFdpVFFFQUxxbkpKd0VhODR5YnN0VEFRQUYVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmwIjh8473xF8VAigCQzMsF0Ajqn752yLRGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2XmnQEA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_AfnK5YqBFOSX8sBjISFZhy5dqiGKsktTbPy00Zv3wo9Q_w&oe=69507128",
+      "permalink": "https://www.instagram.com/reel/DSutAPRksa4/",
+      "timestamp": "2025-12-26T14:18:18+0000",
+      "like_count": 0,
+      "comments_count": 1
+    },
+    {
+      "id": "17996417822716373",
+      "caption": "Coffee lounge In Ho Chi Minh , really chill vibes here and definitely worth checking out . #travel #digitalnomadlife #vietnam #fyp #coffee",
+      "media_type": "VIDEO",
+      "media_url": "https://instagram.fpnq13-5.fna.fbcdn.net/o1/v/t2/f2/m86/AQOLctxJMysHoP7q10ucW59p4jFtN9pAXSRYcdIYPJL75jS1-bTMOKQN19S-sqKzV2h-2kqn6whk4MgTBIwfVO-XgEhWRwYL1T0wk_g.mp4?_nc_cat=110&_nc_oc=AdmXFmReIPREJ-dlQE5QEILhAO-4byyANSxiLkaixp7utwIiAPlIFX1c4PkECJin_RtDVnlDOoPrSGkq5fGmkbya&_nc_sid=5e9851&_nc_ht=instagram.fpnq13-5.fna.fbcdn.net&_nc_ohc=HsUageT_be4Q7kNvwHtULHt&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6ODYxOTc4MjA5OTIyNzg4LCJhc3NldF9hZ2VfZGF5cyI6MCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjU5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=f6f543788b9254dd&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC83NDQ3NDUyOEJEOUQ1MjRGRDJFOUMzRDhDM0YxQjE4Nl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HRk12TmlTSm1jNjV4ZDBDQUoxTDlDNUFXSlljYnN0VEFRQUYVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmyLuNkN79hwMVAigCQzMsF0BNszMzMzMzGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2XmnQEA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_AfkOXIfnM2T64ZJGcLjh8HBZfUY8Wr9yGnkR3SN5SeikoQ&oe=695069FB",
+      "permalink": "https://www.instagram.com/reel/DSus0loDxc7/",
+      "timestamp": "2025-12-26T14:18:17+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "17942583507093089",
+      "caption": "FLASHMAN RICE 🚨. #chai #fastfood #tea #cafe #friends #food #coffee #viral #viralvideos #love #Hyderabad #Kukutpally #flashman #trendingaudio #trendig #flashmanrice",
+      "media_type": "VIDEO",
+      "media_url": "https://instagram.fpnq13-6.fna.fbcdn.net/o1/v/t2/f2/m86/AQNg4va7uyyoyduo4wcRe_QbnonE8iNMI7YOUSZ0fOH9ZDGjXZS11iKxOVlg3-HPWSYtOWtgKoX-Imeo1JwKk2-VZGuNgxrIVZGHDjg.mp4?_nc_cat=104&_nc_oc=Adn7hzce9QTiFNlYcROJjm236Hi3rVsJSKsySkagAQdqCQ0zeoEPGpeuTMYFlavl3oOZsgN7mo4wcNjPOm-dIST3&_nc_sid=5e9851&_nc_ht=instagram.fpnq13-6.fna.fbcdn.net&_nc_ohc=s37TNqVG66sQ7kNvwErWpb_&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTc2NzQ3ODI1NDA3MzU5NCwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo0MywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=a54c9dc23a3ccd4&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9DMDQwMDgzODcxRjhENDE0N0IzNUFFRTFDNzk4N0NCNl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HRzZsOGlPbngzZEV5M01GQUFvXzBiemJpcWd1YnN0VEFRQUYVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm9Nvbl-PgowYVAigCQzMsF0BFszMzMzMzGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2XmnQEA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_Aflru9XAFeIBHHF5n6QKy9183aGQLQ1C2JatjxqiMgnBog&oe=69506435",
+      "permalink": "https://www.instagram.com/reel/DSusVX1EgK_/",
+      "timestamp": "2025-12-26T14:18:17+0000",
+      "like_count": 1,
+      "comments_count": 0
+    },
+    {
+      "id": "18183851446358697",
+      "caption": "Coffee makes me less Grinchy💚\n\nbcblacquers  Talk Turkey to Me\nmouteen_nails  Grinch\nmaniscriptshop  Sip It!\nhellomaniology  Heart of Gold, Smudge Free Top Coat \ndrunkfairypolish  Bibbidi Bobbidi Smooth, Glasswing Glaze \n\n#EspressoYourself #CaffeinatePolishRepeat #NailPolish #NailStamping #NailsOfInstagram #Christmas #HolidayNails #Grinch #Coffee",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/600459714_17868036966530083_2273625708448266838_n.webp?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=RACX2KnXOAIQ7kNvwFkKmoW&_nc_oc=Adme6iPwaKvaW8Zv-F2ypWcYAbtMooARx5IJGk1Sqa_TUwUdrX5pZ6DOPz6MgNUOr18XPPXKWkoHVusjPf46aaln&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AEoDcc0EAAAA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&oh=00_Afko1x6EZSlsM075zjefxRoMHDJJ8wP6Nyieyz-iD75qDA&oe=695455FD",
+      "permalink": "https://www.instagram.com/p/DSutA0fAFAH/",
+      "timestamp": "2025-12-26T14:18:11+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "18116795776584313",
+      "caption": "Asi empezamos el dia #fypviralシ #coffee",
+      "media_type": "IMAGE",
+      "media_url": "https://scontent.cdninstagram.com/v/t39.30808-6/603914594_25619100401058242_7464829343316065171_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=111&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=DwE8QZ7Jt6UQ7kNvwGN3p6C&_nc_oc=Adk3hBHza9fCQa_eoxoTS1T1Yhemfm51VGnyUuTrgwlbpqNjgRJN3GG6WYqC7HVwtcZfoJ339gso_NTP1DF8jlsV&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AEoDcc0EAAAA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&oh=00_Afn2zaubq04uikCGUAbsHp7T3qN_Kgf_8haoRrAaFjvpZw&oe=69547978",
+      "permalink": "https://www.instagram.com/p/DSutAx-jY49/",
+      "timestamp": "2025-12-26T14:18:11+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "18098237452873496",
+      "caption": "From today, this cup tells our story ☕\nJust the beginning.\nKoramangala 📍\n\n#coffee",
+      "media_type": "VIDEO",
+      "media_url": "https://instagram.fpnq13-6.fna.fbcdn.net/o1/v/t2/f2/m86/AQMLKDoBfVTyACrURT1_EsKJ091VCRAu5r6oU-WBZ8Wnu8f5WCWQ1_S2YtJaS8gJHzpSeuw0X5TbZI-3WSfdo4Je914DCpKyoyMG2tw.mp4?_nc_cat=102&_nc_oc=Adm1MyZvLBo1w4HV4RXv3kaOa2KODqo5yy-pZRRBEXnoAURztVxsE6l4fuF9DIxXVmSiQA0cxNJwu8vzLusKHYLO&_nc_sid=5e9851&_nc_ht=instagram.fpnq13-6.fna.fbcdn.net&_nc_ohc=5M81xsszIywQ7kNvwEKD-HV&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6OTAyODI0NTc1NDMzODI1LCJhc3NldF9hZ2VfZGF5cyI6MCwidmlfdXNlY2FzZV9pZCI6MTA4MjcsImR1cmF0aW9uX3MiOjE5LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=a35c2a2ff8c4e252&_nc_vs=HBkcFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC84NTQwMzAzRDA4ODdCRUY5MEY2NURBNTUxQzlENEM4OV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmwvHnoafHmgMVAigCQzMsF0AzzMzMzMzNGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2WWqQEA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_Afk_4bco3Ktw7OJGWTxGwaBpu8z8gX6WX89VEsSlkqQZ7w&oe=695068FB",
+      "permalink": "https://www.instagram.com/reel/DSusCj6DwkM/",
+      "timestamp": "2025-12-26T14:18:10+0000",
+      "like_count": 1,
+      "comments_count": 0
+    },
+    {
+      "id": "18031281332759519",
+      "caption": "www.perkupcafe.shop  #coffee #coffeetime #coffeeholic #coffeecoffeecoffee #coffeeshops",
+      "media_type": "IMAGE",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/607534846_17845063344657490_3163767388483172763_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=N3YqMewUw-YQ7kNvwEfj1q3&_nc_oc=AdmMDcuTlSOJE5ToQGMoNM14YquXENwswrtMNUmbaU9Pksp7Fc4JkaqbYS7omDEA--Oy-NZx26bcUbiwJ5YbnR5m&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AEoDcc0EAAAA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&oh=00_AfkaYnk3ZWKjzX9-XTCxyeBl0uk1kJ5FUk2qdXQ6mRYjqw&oe=6954868B",
+      "permalink": "https://www.instagram.com/p/DSus_h6kSGr/",
+      "timestamp": "2025-12-26T14:18:00+0000",
+      "like_count": 1,
+      "comments_count": 0
+    },
+    {
+      "id": "17964912720007807",
+      "caption": "🎄 This Christmas smells like raw mango, fig & a little chaos.✝️\n\nMeet Los Locos — not your average holiday brew.\n100% Arabica, hand-picked from South Odisha’s SL-9 varietal, yellow-honey processed for that lively sweetness ✨\n\nMedium roasted to bring out notes of raw mango, fig, and a hint of white-wine brightness — layered, fruit-forward, and made for the curious palate.\n\nBest part? They’re officially OPEN FOR SALE.🛍️🛒\nSip something bold this Christmas 🎅🏽☕️\n👉 Head to the website — loslocos.life \n.\n.\n.\n.\n[LosLocosCoffee, ChristmasBrew , SpecialtyCoffeeIndia , HolidaySips , ArabicaLove ,CoffeeReel NowBrewing, DrinkCurious, Delhi, India]\n\n#foodblogger #coffee #explore #christmas #coffeeholic",
+      "media_type": "VIDEO",
+      "media_url": "https://instagram.fpnq13-6.fna.fbcdn.net/o1/v/t2/f2/m86/AQO6QKFxM_mLA8VFCgCJvZpKmTCOFJpsTQsjxVvtVftsNFgfbJwtJbiWmUUzCkcmUFiVy-GOo9YTzpIlXZmd8QyQFRWoxNOkny2Vm2k.mp4?_nc_cat=102&_nc_oc=Adn5zxuDRViTB0edB1NCAOfwQeq7BMYCSZQ8csnDaRlFPAAUEv5awiH-zUCfWw1WbqMFXmftf9iA4kkmDN5yqK2O&_nc_sid=5e9851&_nc_ht=instagram.fpnq13-6.fna.fbcdn.net&_nc_ohc=eCtoEXfo96YQ7kNvwHVg3rv&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MjIwODU1ODUxNjYxNjA0NCwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjozNywidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=99b4df43e47aef55&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8yNjQzM0VGRTE0NjhDNDFGRTNFMzQ5NjIwNUU1N0M4OV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HSjZtRGlURlNhb1hneEVGQUdoa3pIZklkTFFXYnN0VEFRQUYVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm2O3JnYOr7AcVAigCQzMsF0BC5mZmZmZmGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2XmnQEA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_Afl_OXoLP9Z59ls01HLFbjcsU6gySh7cJkD8uJhPyE55Hw&oe=69507B13",
+      "permalink": "https://www.instagram.com/reel/DSusRmVEu-o/",
+      "timestamp": "2025-12-26T14:17:58+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "17978206493955981",
+      "caption": "美容院でカットしてもらいながら音楽を聴く\nLes Champs-Élyséesが流れてた\n\nその後ラテを飲みながら音楽を聴く\n何かはわからない\nここはレコードというこだわり\n\n最近は音楽聴いてなかったなぁ、と思った\n\nColombiaの豆でバナナの香りが鼻に抜ける\nバナナのパウンドケーキいらんやん、ってくらい\n\n#coffee #cafelatte #大阪カフェ",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/607413528_18499060102079976_1962145711994379012_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=a_TelEphVREQ7kNvwEcF_ly&_nc_oc=AdnayZGriIgVBaF6F2GLcpEV1ypnXsr-SEmzfVdHxrBrHU4pgph9CnVNLcUnzISG9nZPJAl6sNsAO-yssyKTusuY&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AEoDcc0EAAAA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&oh=00_AfnyzbGEa_Di3ywZjP8PXz2y9gJMC3mwxzBwnmI38xFuPw&oe=695453FD",
+      "permalink": "https://www.instagram.com/p/DSus_GegQiy/",
+      "timestamp": "2025-12-26T14:17:57+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "18086331449045608",
+      "caption": "Ceritanya : ketika lagi ga mood tapi harus tetep buat kopi😌☕\n-\nKadang yang dibutuhkan bukan selalu suasana yang baik, tapi komitmen untuk tetap melakukan yang baik.⛷️\n-\n#kopi #coffee #manual #brew #barista",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/589206531_18339220585233804_2298622903160967188_n.webp?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=OJrcUmUCsK8Q7kNvwF70a4D&_nc_oc=AdnWw48T4tQsNX3ufb6BB23OUWvctUTMohzKqAmKZACpvyrgun1M_eTX6SvHi6-_QBrFsKfUmbOUQ8_3Cp-5DH1r&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AEoDcc0EAAAA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&oh=00_AflzWSHPrvVqf9WgQYB4SXQQsv71n6sgEssCgMco3OAxNA&oe=695465D3",
+      "permalink": "https://www.instagram.com/p/DSus-__D5-J/",
+      "timestamp": "2025-12-26T14:17:56+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "18102093325703661",
+      "caption": "#irishcoffee #coffee #cream #christmas",
+      "media_type": "IMAGE",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/605791691_18554648434033849_6135086993642880972_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=rAAe5igzOuoQ7kNvwH9pc4v&_nc_oc=AdnqmRerWSgC6VjdnVAY1iUofSiVS-coyIkbpqZcaMgnrsAfTGSR0DVqw7ZiCBbWT_WJvqflVspVUOTV54b-Y9BT&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AEoDcc0EAAAA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&oh=00_Afnr9_2oiZV2ojmtfdQeNYOzRzUM5Z0wsItSsMqV9SlNwg&oe=69547262",
+      "permalink": "https://www.instagram.com/p/DSus9_dCKhT/",
+      "timestamp": "2025-12-26T14:17:48+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "18308738512266358",
+      "caption": "#fashionstyle #foto #street #coffee #fashiondesigner",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/606713698_17849270583604499_4008249655516414759_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=eRp4eZIobwgQ7kNvwF8Ygwz&_nc_oc=AdnX8ZEPcM7JffAxXmLn8c_QVbXUSsVBM3ePZc3imbcWzzr609WgRwsM_yOb4b8NUqfZNmrzgjm6sv8BE2ntHkDz&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AEoDcc0EAAAA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&oh=00_Afl_eqjGQBQH42Vp-W14A6zx63O0dpJJ_96NJ-0UQpPPxA&oe=6954829F",
+      "permalink": "https://www.instagram.com/p/DSus9vEDdhI/",
+      "timestamp": "2025-12-26T14:17:46+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "17993252798882526",
+      "caption": "Vai um cappuccino aí?? \n\n#cafe #coffee #cappuccino #latteart #barista",
+      "media_type": "VIDEO",
+      "media_url": "https://instagram.fpnq13-5.fna.fbcdn.net/o1/v/t2/f2/m86/AQPv4P2AwLjlahiyAisnlCKJxFXbm3SidSgUTiseIP59kAyORfiYIxeU2mwiGskrTpAD9v2TXBRqjuSBIeJ7H36rbBb7RTKr92uj4CI.mp4?_nc_cat=108&_nc_oc=AdlHg8oqaZKN8omk_NrtFE1p7lz6RHbntlZafTvdwoSSsugOLmrYeUc8Fng3YaN5axEH1ELGtfP-p-04IQSbFnDV&_nc_sid=5e9851&_nc_ht=instagram.fpnq13-5.fna.fbcdn.net&_nc_ohc=TtqFsuC9GqkQ7kNvwEK3Bry&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6ODA4OTI5Mzk1NTA5NzMyLCJhc3NldF9hZ2VfZGF5cyI6MCwidmlfdXNlY2FzZV9pZCI6MTAwOTksImR1cmF0aW9uX3MiOjU3LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=ecac50594d53b697&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9ENTQzODM0NEQzMDlGNzQwMUUxQTgwNjkzMjgzQTE5M192aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HUDg2RGlTRnFtZHpKNlFJQUo1cjZVN01scXhhYnN0VEFRQUYVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmyKek1PHt7wIVAigCQzMsF0BMmZmZmZmaGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2XmnQEA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_Afmlje_GmvcOUBmUJwcZ16TfRNEFW0UrSDO5zBh2Xt6NJg&oe=69507A15",
+      "permalink": "https://www.instagram.com/reel/DSusI_0jsuc/",
+      "timestamp": "2025-12-26T14:17:36+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "17954912552912269",
+      "caption": "#jaipur #coffee #lepetitepalato #vaishalinagar #sirsiroad",
+      "media_type": "VIDEO",
+      "media_url": "https://instagram.fpnq13-5.fna.fbcdn.net/o1/v/t2/f2/m86/AQO-vqi_jF6NE0tiFWleZeH0cRbVrbY3tQwfyxTB0kPYDxgmVEIR7lawWPrQwF_b2Un2md_nPduMuYaKrLz9JLaPRh6HtIE1Z_XLOqM.mp4?_nc_cat=108&_nc_oc=Adk_Pp90Sgx8lHxWfaBoJjdyKSObqSQiGwiEj0Gec1uLFEQ0wWwUiglvlaK83auqH_qlU9SM7oeG2Tjvlw_DprD_&_nc_sid=5e9851&_nc_ht=instagram.fpnq13-5.fna.fbcdn.net&_nc_ohc=48L0reXuT_sQ7kNvwGMLGFQ&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTk0Mzc5MDQ4NjUzNDk3MiwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoyMiwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=9aedf43b91dcdc13&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xMDQ2NDRCNDgzMTY1NEVGNkMxN0U5Mzc3QUE2RTA4NV92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HSi1pRlNSWmNKVmQ4V1oxQUkwYVd4TnJoUVZiYnN0VEFRQUYVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAm-Oy917_38wYVAigCQzMsF0A2kOVgQYk3GBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2XmnQEA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_AfmWhNgjEx96CcyWfc8dCHXtdv9nwoUlMSV2mxDRv_jEPA&oe=69509241",
+      "permalink": "https://www.instagram.com/reel/DSus3V9EtZ8/",
+      "timestamp": "2025-12-26T14:17:33+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "18298008193273646",
+      "caption": "Craving something yummy? 😋🎄\n\nTry our Iced Peppermint Mocha — waiting for you at Swillerbees! ☕❄️🐝\n\n📍 Flagler Beach • Palm Coast • Ormond Beach\n\n⏰ 6AM-4PM (7 Days a Week)\n🤳🏼 Skip the Line – Order Online!\n\n🍩 Craft Donuts All Day\n🥯 Breakfast Sandwiches All Day\n\n☕Artisanal Small-Batch Coffee\nLattes • Cappuccinos • Cold Brew • Matcha 🍵\n\n#swillerbees #flaglerbeach #palmcoast #ormondbeach #ormondbythesea #staugustine #flaglercounty #flaglerfoodies #bunnell #volusiacounty #flaglercollege #craftdonuts #coffee #donuts",
+      "media_type": "VIDEO",
+      "media_url": "https://instagram.fpnq13-4.fna.fbcdn.net/o1/v/t2/f2/m86/AQMcYB1Obn0PhlHl9o3YcQQ5jw_GaVdrECk22ZehQZzM2OKwz9yBRNNLCm9E3Ix1gI2WkE4_kolw4btX4UFoj1yFw2jZLf2sel8eXCo.mp4?_nc_cat=106&_nc_oc=AdkSQT5lBCsQY4sYW-0dbNf_u8SMFdwoKCKX09eXrenKlo97_KzH2ff6AYCATrs4hrc6s2VEE54sPYTrMDcb1qE_&_nc_sid=5e9851&_nc_ht=instagram.fpnq13-4.fna.fbcdn.net&_nc_ohc=JFoBkU-9jjkQ7kNvwEqNmeD&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6MTg0ODAyMjkxOTE3MDcyNSwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjo4LCJ1cmxnZW5fc291cmNlIjoid3d3In0%3D&ccb=17-1&vs=737357a4fed76188&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC8xQjQxRjc5QjBFODdDMUJGMkMwOTYyMjY3NEM1QzI4Rl92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HQnN6SGlTTXloUzBDa0FFQVBnZU92QndNcmdYYnN0VEFRQUYVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmyqqS2ouxyAYVAigCQzMsF0AhZmZmZmZmGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2XmnQEA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_AfndoJPZogPIRWVrVtNpQ9N9vcpYUbiaZyCNUGK5WuDZtw&oe=69506A67",
+      "permalink": "https://www.instagram.com/reel/DSus5YCDSkt/",
+      "timestamp": "2025-12-26T14:17:29+0000",
+      "like_count": 1,
+      "comments_count": 0
+    },
+    {
+      "id": "17960941596009813",
+      "caption": "Dekho na guys... 🤣 My fav cafe barns.qatar \nA saudi brand ☕️🇸🇦 Now in Qatar 🇶🇦😍👌\n\n📍westwalk.qa\n\n#explore #café #barns #coffee #saudicoffee #doha #qatar #alhamdulillah #reels #trending #qatarlife #funny #funnyreels #mahergoodlife",
+      "media_type": "VIDEO",
+      "media_url": "https://instagram.fpnq13-2.fna.fbcdn.net/o1/v/t2/f2/m86/AQNJBX8kuio64QuzR15tSh5UzO7X6dZKAL3-KGxmnyCmfNk8kWdzkNSGx6WKGuFxJhH-7hGvwNS4tGbxN1Q39W6rEOwGYe7skCekzqg.mp4?_nc_cat=111&_nc_oc=AdkfGTSWUVp6VbvqXpI363HcNi2-n5zCOuDH_o5chM0cHuGxIQgxm1j2Zgwy3dWwmI_hWYAm_pxUAB879lDW-FuY&_nc_sid=5e9851&_nc_ht=instagram.fpnq13-2.fna.fbcdn.net&_nc_ohc=OkcZVzPzWA0Q7kNvwHtW_4r&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6Mzg4MjEwMDMwNTQxNjc2OSwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxMSwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=da3eb70179e31675&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9DODQ4M0U5RjE2NUNBRkRDNzM4RkUxQkU2N0I4REE5OF92aWRlb19kYXNoaW5pdC5tcDQVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HTXBYRWlSQUpLaF9IMklFQUEzT0NxVmRvd3A1YnN0VEFRQUYVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmgsn-mv2v5Q0VAigCQzMsF0Anu2RaHKwIGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2XmnQEA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_Afmbf3ccsl__PGAQ8copAR3dwT8yDeXMWYFA1-QYKJkNOA&oe=69506074",
+      "permalink": "https://www.instagram.com/reel/DSur-GnCIub/",
+      "timestamp": "2025-12-26T14:17:28+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "18077253356210911",
+      "caption": "Ice Caramel Macchiato\nخنک، لطیف، اعتیادآور✨\n\n#آیس_کارامل_ماکیاتو#mbo#کافه#امیدیه#coffee",
+      "media_type": "VIDEO",
+      "media_url": "https://instagram.fpnq13-5.fna.fbcdn.net/o1/v/t16/f2/m69/AQMrC9OcryCWylMLcidElqnYpi7roTv2ads0os-q-DjpxWS0CtoHl_del5_pD_u8nWt91QG30805U20gXRY1g3P9.mp4?strext=1&_nc_cat=110&_nc_oc=AdlsUFKSkCWMgeOjQfDG6Yk8lB9ldm90_JnjNj2qC22TWXTbeMfM4qWgU7vMtaVcBG34P5fvl0ri0J1bmNM6X2vO&_nc_sid=5e9851&_nc_ht=instagram.fpnq13-5.fna.fbcdn.net&_nc_ohc=bfT1HHJmU0oQ7kNvwGi_pPM&efg=eyJ2ZW5jb2RlX3RhZyI6Inhwdl9wcm9ncmVzc2l2ZS5JTlNUQUdSQU0uQ0xJUFMuQzMuNzIwLmRhc2hfYmFzZWxpbmVfMV92MSIsInhwdl9hc3NldF9pZCI6NDI2MTU2MTA5NzQxNzkyNCwiYXNzZXRfYWdlX2RheXMiOjAsInZpX3VzZWNhc2VfaWQiOjEwMDk5LCJkdXJhdGlvbl9zIjoxNCwidXJsZ2VuX3NvdXJjZSI6Ind3dyJ9&ccb=17-1&vs=c92df9e99af070c4&_nc_vs=HBksFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HTXUyM3lOajA2TFAxQThFQUNrcm55dHBWZW9NYnNwVEFRQUYVAALIARIAFQIYOnBhc3N0aHJvdWdoX2V2ZXJzdG9yZS9HRjI1SENUWWJKNGJKeElEQUFBa1RMUkJRNWR5YnN0VEFRQUYVAgLIARIAKAAYABsCiAd1c2Vfb2lsATEScHJvZ3Jlc3NpdmVfcmVjaXBlATEVAAAmiNOztsD3kQ8VAigCQzMsF0AtAAAAAAAAGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHX-B2XmnQEA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&edm=AEoDcc0EAAAA&_nc_zt=28&oh=00_AfkZ2WmbJOY79PkAWwRYEoynPNu6LMswcDslXutl8wEhcg&oe=69545092",
+      "permalink": "https://www.instagram.com/reel/DSusti0Ahai/",
+      "timestamp": "2025-12-26T14:17:26+0000",
+      "like_count": 1,
+      "comments_count": 0
+    },
+    {
+      "id": "17958201501020089",
+      "caption": "🥹💖💖\n\n#2026 #newyear #explore #coffee #instagood",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/605964653_17909390583274496_2718919977944325184_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=PdaeBJ5lq1sQ7kNvwExWyuI&_nc_oc=Adl8G1RxsAn0qBi9y4Z6qgMB81HGMOBlRJFdtAJiFSLPAuoYjvkHgTFP5R1wTly1zp1tlbIwFXsCN53ekaN7izJk&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AEoDcc0EAAAA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&oh=00_AfnHW-evSTZlR3i_kfax5kNUOhxk7E-TlXlRWN10kX6sIA&oe=69548414",
+      "permalink": "https://www.instagram.com/p/DSus7MHCNvw/",
+      "timestamp": "2025-12-26T14:17:25+0000",
+      "like_count": 1,
+      "comments_count": 0
+    },
+    {
+      "id": "18098452816681370",
+      "caption": "lamizcoffee \nMorning magic in a mug☕️\n#café #coffee #latté #قهوه #کافه",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/606735554_18517347502068037_854011611864081023_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=60o_K8GEcFQQ7kNvwE5Hj93&_nc_oc=AdnMkU0UvxBhfVmV_ZRTmKF8Zu7krTzWBunvfdJakGIUsB_hPmnUfUQzxMEdDSLkUA27oW-880wFq2Ffp1wE9mNs&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AEoDcc0EAAAA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&oh=00_Afn5ZjXe4Kb0aQiBmFIjL8KkmVvoOhny6Zvb2T3QbxS9Mw&oe=695482C6",
+      "permalink": "https://www.instagram.com/p/DSus6_6jT9A/",
+      "timestamp": "2025-12-26T14:17:23+0000",
+      "like_count": 0,
+      "comments_count": 0
+    },
+    {
+      "id": "18035227589744417",
+      "caption": "Reality is just perception and whatever you want it to be\n\n#hyderabad #lasthousecoffee #coffee #workfromanywhere #workfromhome",
+      "media_type": "CAROUSEL_ALBUM",
+      "media_url": "https://scontent.cdninstagram.com/v/t51.82787-15/606006663_18525519004071949_2016657497920533385_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=uGB80vbl2kwQ7kNvwF3ylz7&_nc_oc=AdkYcLh4nuXHioY20mYXmmzcuzXAULME-YhizL9A6xBJuTKfU9-EQlJoMDc0cRHzA0GzcwoWdNmuQB9rylLneu4n&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&edm=AEoDcc0EAAAA&_nc_gid=DcmyAIGGsBPabmCRK-1RMA&oh=00_AfkwmoQz74zYWBXPzm-z30siBf8oGMpGdlxt-SNpmyjIMw&oe=69546ADA",
+      "permalink": "https://www.instagram.com/p/DSus6Vkk6D9/",
+      "timestamp": "2025-12-26T14:17:18+0000",
+      "like_count": 3,
+      "comments_count": 0
+    }
+  ],
+  "paging": {
+    "cursors": {
+      "after": "UVZAGRU1TMXhTVGRzZAEhWSFVrNVBWV3N0Vmt0c01FMVJZAakpXY1hoMVdHNUxPWEI2YUhOS2NHSjBhVGxyTUVFdGRHd3lSREJpV0dWeWRXMWhNSEYxVG1KbU0yeEpURU5TVmpkb1NYQlNVMmRoU25wQ1dFZAHZAPUT09"
+    },
+    "next": "https://graph.facebook.com/v24.0/17841562438105667/recent_media?user_id=17841457297615006&fields=id%2Ccaption%2Cmedia_type%2Cmedia_url%2Cpermalink%2Ctimestamp%2Clike_count%2Ccomments_count&limit=25&access_token=EAATy5aHCzPsBQfAAwpB2ujyKDGMvWPC8bphWZAH1hcffXZAV96ZB8lVPJ2BcK5n67EKmQpV0LFLWTJFaw0MInXDYF5lBlDg3laKfqKNtYXOHVPsVQeDz9pY87I1I4vpKn3stmay8fE1kMXIxYTUtVN8pmt78uqTJZBKpLXcZATErHBcQLzV6FlJWL6fwExAyWLFCL&after=UVZAGRU1TMXhTVGRzZAEhWSFVrNVBWV3N0Vmt0c01FMVJZAakpXY1hoMVdHNUxPWEI2YUhOS2NHSjBhVGxyTUVFdGRHd3lSREJpV0dWeWRXMWhNSEYxVG1KbU0yeEpURU5TVmpkb1NYQlNVMmRoU25wQ1dFZAHZAPUT09"
+  }
+}
+
+POST ANALYTICS (MEDIA INSIGHTS)
+
+API Response:
+{
+  "success": true,
+  "mediaId": "17907518694284954",
+  "mediaType": "IMAGE",
+  "insights": [
+    {
+      "name": "views",
+      "period": "lifetime",
+      "values": [
+        {
+          "value": 22
+        }
+      ],
+      "title": "Views",
+      "description": "The number of times that your post was played or displayed.",
+      "id": "17907518694284954/insights/views/lifetime"
+    },
+    {
+      "name": "reach",
+      "period": "lifetime",
+      "values": [
+        {
+          "value": 2
+        }
+      ],
+      "title": "Accounts reached",
+      "description": "The number of unique accounts that have seen this post at least once. Reach is different from impressions, which may include multiple views of your post by the same accounts. This metric is estimated.",
+      "id": "17907518694284954/insights/reach/lifetime"
+    },
+    {
+      "name": "likes",
+      "period": "lifetime",
+      "values": [
+        {
+          "value": 2
+        }
+      ],
+      "title": "Likes",
+      "description": "The number of likes on your post.",
+      "id": "17907518694284954/insights/likes/lifetime"
+    },
+    {
+      "name": "comments",
+      "period": "lifetime",
+      "values": [
+        {
+          "value": 0
+        }
+      ],
+      "title": "Comments",
+      "description": "The number of comments on your post.",
+      "id": "17907518694284954/insights/comments/lifetime"
+    },
+    {
+      "name": "shares",
+      "period": "lifetime",
+      "values": [
+        {
+          "value": 0
+        }
+      ],
+      "title": "Shares",
+      "description": "The number of shares of your post.",
+      "id": "17907518694284954/insights/shares/lifetime"
+    },
+    {
+      "name": "saved",
+      "period": "lifetime",
+      "values": [
+        {
+          "value": 0
+        }
+      ],
+      "title": "Saved",
+      "description": "The number of saves of your post.",
+      "id": "17907518694284954/insights/saved/lifetime"
+    },
+    {
+      "name": "total_interactions",
+      "period": "lifetime",
+      "values": [
+        {
+          "value": 2
+        }
+      ],
+      "title": "Post interactions",
+      "description": "The number of likes, saves, comments and shares on your post minus the number of unlikes, unsaves and deleted comments.",
+      "id": "17907518694284954/insights/total_interactions/lifetime"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connection Failed - Instagram OAuth</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo">❌</div>
+    <h1>Connection Failed</h1>
+    <p class="subtitle">
+      We couldn't connect your Instagram account.
+    </p>
+
+    <div class="error-message" id="errorDetails">
+      <strong>Error Details:</strong>
+      <p id="errorText">An unknown error occurred during the connection process.</p>
+    </div>
+
+    <div class="info-box">
+      <h3 style="margin-bottom: 15px; font-size: 18px;">Common Issues:</h3>
+      <ul class="permissions-list" style="list-style: disc; padding-left: 20px;">
+        <li style="margin-bottom: 10px;">
+          <strong>Permission Denied:</strong> You declined to authorize the application on Instagram.
+        </li>
+        <li style="margin-bottom: 10px;">
+          <strong>Invalid Credentials:</strong> The Instagram App ID or Secret may be incorrect.
+        </li>
+        <li style="margin-bottom: 10px;">
+          <strong>Redirect URI Mismatch:</strong> The callback URL doesn't match what's configured in Meta App Dashboard.
+        </li>
+        <li style="margin-bottom: 10px;">
+          <strong>Network Error:</strong> There was a problem communicating with Instagram's servers.
+        </li>
+      </ul>
+    </div>
+
+    <button class="btn btn-primary" onclick="tryAgain()">
+      Try Again
+    </button>
+
+    <button class="btn btn-secondary" onclick="goHome()">
+      Back to Home
+    </button>
+
+    <div class="footer">
+      <p>
+        If the problem persists, check your Instagram App configuration in the Meta Developer Dashboard.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Get error from URL parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const error = urlParams.get('error');
+
+    if (error) {
+      document.getElementById('errorText').textContent = decodeURIComponent(error);
+    }
+
+    function tryAgain() {
+      window.location.href = '/';
+    }
+
+    function goHome() {
+      window.location.href = '/';
+    }
+  </script>
+</body>
+</html>

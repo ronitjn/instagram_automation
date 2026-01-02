@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram OAuth Integration</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo">📸</div>
+    <h1>Instagram Integration</h1>
+    <p class="subtitle">
+      Connect your Instagram Business account to manage messages, comments, and publish content.
+    </p>
+
+    <div class="info-box">
+      <h3 style="margin-bottom: 15px; font-size: 18px;">What you'll be able to do:</h3>
+      <ul class="permissions-list">
+        <li>View basic account information</li>
+        <li>Manage direct messages</li>
+        <li>Moderate comments</li>
+        <li>Publish content</li>
+      </ul>
+    </div>
+
+    <button class="btn btn-primary" onclick="connectInstagram()">
+      Connect Instagram Account
+    </button>
+
+    <div class="footer">
+      <p>
+        By connecting, you'll be redirected to Instagram to authorize this application.
+        Your credentials are never stored by this application.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function connectInstagram() {
+      // Redirect to backend OAuth initiation endpoint
+      window.location.href = '/auth/instagram';
+    }
+  </script>
+</body>
+</html>

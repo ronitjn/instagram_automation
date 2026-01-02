@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Successfully Connected - Instagram OAuth</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="success-icon">✅</div>
+    <h1>Successfully Connected!</h1>
+    <p class="subtitle">
+      Your Instagram account has been successfully connected and authorized.
+    </p>
+
+    <div class="info-box" id="connectionInfo">
+      <h3 style="margin-bottom: 15px; font-size: 18px;">Connection Details:</h3>
+      <div class="info-row">
+        <span class="info-label">Facebook User ID:</span>
+        <span class="info-value" id="userId">-</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Instagram Username:</span>
+        <span class="info-value" id="instagramUsername">-</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Instagram Account ID:</span>
+        <span class="info-value" id="instagramAccountId">-</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Token Expires In:</span>
+        <span class="info-value" id="expiresIn">-</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Permissions Granted:</span>
+        <span class="info-value" id="permissions">-</span>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 20px 0;">
+      <button class="btn btn-primary" onclick="testAPI()">
+        Test Facebook API
+      </button>
+
+      <button class="btn btn-primary" onclick="fetchInstagramMedia()" id="instagramMediaBtn" style="display: none;">
+        Fetch Instagram Posts
+      </button>
+
+      <button class="btn btn-primary" onclick="fetchAccountInsights()" id="insightsBtn" style="display: none;">
+        Get Account Insights
+      </button>
+
+      <button class="btn btn-primary" onclick="fetchStories()" id="storiesBtn" style="display: none;">
+        Get Stories
+      </button>
+
+      <button class="btn btn-primary" onclick="fetchTaggedMedia()" id="taggedBtn" style="display: none;">
+        Get Tagged Media
+      </button>
+
+      <button class="btn btn-primary" onclick="showBusinessDiscovery()" id="discoveryBtn" style="display: none;">
+        Business Discovery
+      </button>
+
+      <button class="btn btn-primary" onclick="showHashtagSearch()" id="hashtagBtn" style="display: none;">
+        Search Hashtags
+      </button>
+
+      <button class="btn btn-primary" onclick="getHashtagTopMedia()" id="hashtagTopBtn" style="display: none;">
+        Hashtag Top Media
+      </button>
+
+      <button class="btn btn-primary" onclick="getHashtagRecentMedia()" id="hashtagRecentBtn" style="display: none;">
+        Hashtag Recent Media
+      </button>
+
+      <button class="btn btn-primary" onclick="showMediaInsights()" id="mediaInsightsBtn" style="display: none;">
+        Post Analytics (Media Insights)
+      </button>
+
+      <button class="btn btn-primary" onclick="getAudienceDemographics()" id="audienceBtn" style="display: none;">
+        Audience Demographics
+      </button>
+
+      <button class="btn btn-primary" onclick="showAccountInsightsPeriod()" id="periodInsightsBtn" style="display: none;">
+        Account Insights (Time Period)
+      </button>
+
+      <button class="btn btn-danger" onclick="logout()">
+        Disconnect Account
+      </button>
+    </div>
+
+    <div class="loading" id="loading">
+      Loading...
+    </div>
+
+    <div class="api-response" id="apiResponse" style="display: none;">
+      <strong>API Response:</strong>
+      <pre id="responseData"></pre>
+    </div>
+
+    <div class="footer">
+      <a href="/" style="color: #667eea; text-decoration: none;">← Back to Home</a>
+    </div>
+  </div>
+
+  <script>
+    // Get URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const userId = urlParams.get('userId');
+    const instagramUsername = urlParams.get('instagramUsername');
+    const instagramAccountId = urlParams.get('instagramAccountId');
+    const permissions = urlParams.get('permissions');
+    const expiresIn = urlParams.get('expiresIn');
+
+    // Display connection info
+    if (userId) {
+      document.getElementById('userId').textContent = userId;
+    }
+
+    if (instagramUsername && instagramUsername !== 'Not connected') {
+      document.getElementById('instagramUsername').textContent = '@' + instagramUsername;
+      // Show all Instagram buttons if account is connected
+      document.getElementById('instagramMediaBtn').style.display = 'inline-block';
+      document.getElementById('insightsBtn').style.display = 'inline-block';
+      document.getElementById('storiesBtn').style.display = 'inline-block';
+      document.getElementById('taggedBtn').style.display = 'inline-block';
+      document.getElementById('discoveryBtn').style.display = 'inline-block';
+      document.getElementById('hashtagBtn').style.display = 'inline-block';
+      document.getElementById('hashtagTopBtn').style.display = 'inline-block';
+      document.getElementById('hashtagRecentBtn').style.display = 'inline-block';
+      document.getElementById('mediaInsightsBtn').style.display = 'inline-block';
+      document.getElementById('audienceBtn').style.display = 'inline-block';
+      document.getElementById('periodInsightsBtn').style.display = 'inline-block';
+    } else {
+      document.getElementById('instagramUsername').textContent = 'Not connected';
+    }
+
+    if (instagramAccountId && instagramAccountId !== 'none') {
+      document.getElementById('instagramAccountId').textContent = instagramAccountId;
+    } else {
+      document.getElementById('instagramAccountId').textContent = 'Not connected';
+    }
+
+    if (permissions) {
+      const permList = permissions.split(',').join(', ');
+      document.getElementById('permissions').textContent = permList || 'None';
+    }
+
+    if (expiresIn) {
+      const days = Math.floor(expiresIn / (60 * 60 * 24));
+      document.getElementById('expiresIn').textContent = `${days} days`;
+    }
+
+    // Test API function
+    async function testAPI() {
+      if (!userId) {
+        alert('User ID not found in URL parameters');
+        return;
+      }
+
+      const loading = document.getElementById('loading');
+      const apiResponse = document.getElementById('apiResponse');
+      const responseData = document.getElementById('responseData');
+
+      try {
+        loading.classList.add('active');
+        apiResponse.style.display = 'none';
+
+        const response = await fetch(`/api/me?userId=${userId}`);
+        const data = await response.json();
+
+        responseData.textContent = JSON.stringify(data, null, 2);
+        apiResponse.style.display = 'block';
+      } catch (error) {
+        responseData.textContent = `Error: ${error.message}`;
+        apiResponse.style.display = 'block';
+      } finally {
+        loading.classList.remove('active');
+      }
+    }
+
+    // Logout function
+    async function logout() {
+      if (!userId) {
+        alert('User ID not found');
+        return;
+      }
+
+      if (!confirm('Are you sure you want to disconnect your Instagram account?')) {
+        return;
+      }
+
+      try {
+        const response = await fetch(`/api/logout?userId=${userId}`, {
+          method: 'DELETE'
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+          alert('Successfully disconnected!');
+          window.location.href = '/';
+        } else {
+          alert('Failed to disconnect: ' + (data.error || 'Unknown error'));
+        }
+      } catch (error) {
+        alert('Error disconnecting: ' + error.message);
+      }
+    }
+
+    // Fetch Instagram Media function
+    async function fetchInstagramMedia() {
+      const loading = document.getElementById('loading');
+      const apiResponse = document.getElementById('apiResponse');
+      const responseData = document.getElementById('responseData');
+
+      try {
+        loading.classList.add('active');
+        apiResponse.style.display = 'none';
+
+        const response = await fetch(`/api/instagram/media?userId=${userId}&limit=10`);
+        const data = await response.json();
+
+        // Add helpful message about using media IDs
+        let formattedResponse = '📸 YOUR INSTAGRAM POSTS\n';
+        formattedResponse += '═══════════════════════════════════════\n\n';
+        formattedResponse += '💡 TIP: Copy the "id" values below to use with "Post Analytics" button\n\n';
+        formattedResponse += JSON.stringify(data, null, 2);
+
+        responseData.textContent = formattedResponse;
+        apiResponse.style.display = 'block';
+      } catch (error) {
+        responseData.textContent = `Error: ${error.message}`;
+        apiResponse.style.display = 'block';
+      } finally {
+        loading.classList.remove('active');
+      }
+    }
+
+    // Get Account Insights
+    async function fetchAccountInsights() {
+      await callAPI(`/api/instagram/insights?userId=${userId}`);
+    }
+
+    // Get Stories
+    async function fetchStories() {
+      await callAPI(`/api/instagram/stories?userId=${userId}`);
+    }
+
+    // Get Tagged Media
+    async function fetchTaggedMedia() {
+      await callAPI(`/api/instagram/tagged?userId=${userId}&limit=25`);
+    }
+
+    // Business Discovery - prompt for username
+    async function showBusinessDiscovery() {
+      const username = prompt('Enter Instagram username to discover (without @):');
+      if (!username) return;
+
+      await callAPI(`/api/instagram/business-discovery?userId=${userId}&username=${encodeURIComponent(username)}`);
+    }
+
+    // Hashtag Search - prompt for hashtag
+    async function showHashtagSearch() {
+      const query = prompt('Enter hashtag to search (without #):');
+      if (!query) return;
+
+      await callAPI(`/api/instagram/hashtag/search?userId=${userId}&query=${encodeURIComponent(query)}`);
+    }
+
+    // Get Hashtag Top Media - search hashtag then get top media
+    async function getHashtagTopMedia() {
+      const query = prompt('Enter hashtag to get top media (without #):');
+      if (!query) return;
+
+      const loading = document.getElementById('loading');
+      const apiResponse = document.getElementById('apiResponse');
+      const responseData = document.getElementById('responseData');
+
+      try {
+        loading.classList.add('active');
+        apiResponse.style.display = 'none';
+
+        // Step 1: Search for hashtag to get ID
+        responseData.textContent = `Searching for hashtag: #${query}...`;
+        apiResponse.style.display = 'block';
+
+        const searchResponse = await fetch(`/api/instagram/hashtag/search?userId=${userId}&query=${encodeURIComponent(query)}`);
+        const searchData = await searchResponse.json();
+
+        if (!searchData.success || !searchData.hashtags || searchData.hashtags.length === 0) {
+          responseData.textContent = `Hashtag #${query} not found. Make sure the hashtag exists and try again.`;
+          return;
+        }
+
+        const hashtagId = searchData.hashtags[0].id;
+        responseData.textContent = `Found hashtag ID: ${hashtagId}\n\nFetching top media...`;
+
+        // Step 2: Get top media for hashtag
+        const mediaResponse = await fetch(`/api/instagram/hashtag/top-media?userId=${userId}&hashtagId=${hashtagId}&limit=25`);
+        const mediaData = await mediaResponse.json();
+
+        // Format the response
+        const result = {
+          hashtag: `#${query}`,
+          hashtagId: hashtagId,
+          topMediaCount: mediaData.media?.length || 0,
+          topMedia: mediaData.media || [],
+          paging: mediaData.paging
+        };
+
+        responseData.textContent = JSON.stringify(result, null, 2);
+      } catch (error) {
+        responseData.textContent = `Error: ${error.message}`;
+      } finally {
+        loading.classList.remove('active');
+        apiResponse.style.display = 'block';
+      }
+    }
+
+    // Get Hashtag Recent Media - search hashtag then get recent media
+    async function getHashtagRecentMedia() {
+      const query = prompt('Enter hashtag to get recent media (without #):');
+      if (!query) return;
+
+      const loading = document.getElementById('loading');
+      const apiResponse = document.getElementById('apiResponse');
+      const responseData = document.getElementById('responseData');
+
+      try {
+        loading.classList.add('active');
+        apiResponse.style.display = 'none';
+
+        // Step 1: Search for hashtag to get ID
+        responseData.textContent = `Searching for hashtag: #${query}...`;
+        apiResponse.style.display = 'block';
+
+        const searchResponse = await fetch(`/api/instagram/hashtag/search?userId=${userId}&query=${encodeURIComponent(query)}`);
+        const searchData = await searchResponse.json();
+
+        if (!searchData.success || !searchData.hashtags || searchData.hashtags.length === 0) {
+          responseData.textContent = `Hashtag #${query} not found. Make sure the hashtag exists and try again.`;
+          return;
+        }
+
+        const hashtagId = searchData.hashtags[0].id;
+        responseData.textContent = `Found hashtag ID: ${hashtagId}\n\nFetching recent media...`;
+
+        // Step 2: Get recent media for hashtag
+        const mediaResponse = await fetch(`/api/instagram/hashtag/recent-media?userId=${userId}&hashtagId=${hashtagId}&limit=25`);
+        const mediaData = await mediaResponse.json();
+
+        // Format the response
+        const result = {
+          hashtag: `#${query}`,
+          hashtagId: hashtagId,
+          recentMediaCount: mediaData.media?.length || 0,
+          recentMedia: mediaData.media || [],
+          paging: mediaData.paging
+        };
+
+        responseData.textContent = JSON.stringify(result, null, 2);
+      } catch (error) {
+        responseData.textContent = `Error: ${error.message}`;
+      } finally {
+        loading.classList.remove('active');
+        apiResponse.style.display = 'block';
+      }
+    }
+
+    // Generic API call function
+    async function callAPI(url) {
+      if (!userId) {
+        alert('User ID not found');
+        return;
+      }
+
+      const loading = document.getElementById('loading');
+      const apiResponse = document.getElementById('apiResponse');
+      const responseData = document.getElementById('responseData');
+
+      try {
+        loading.classList.add('active');
+        apiResponse.style.display = 'none';
+
+        const response = await fetch(url);
+        const data = await response.json();
+
+        responseData.textContent = JSON.stringify(data, null, 2);
+        apiResponse.style.display = 'block';
+      } catch (error) {
+        responseData.textContent = `Error: ${error.message}`;
+        apiResponse.style.display = 'block';
+      } finally {
+        loading.classList.remove('active');
+      }
+    }
+
+    // Get Media Insights (Individual Post Analytics)
+    async function showMediaInsights() {
+      const mediaId = prompt('Enter Instagram Media ID to analyze:\n\n⚠️ IMPORTANT:\n- You can ONLY analyze YOUR OWN posts\n- Media IDs from Business Discovery WILL NOT work\n- Enter the numeric Media ID (e.g., 17895695668004550)\n\n💡 Tip: Click "Fetch Instagram Posts" first to get YOUR media IDs from the response.');
+      if (!mediaId) return;
+
+      // Validate media ID format (should be numeric)
+      if (!/^\d+$/.test(mediaId.trim())) {
+        alert('❌ Invalid Media ID format!\n\nMedia ID must be a numeric value (e.g., 17895695668004550)\n\nPlease:\n1. Click "Fetch Instagram Posts" button first\n2. Copy the "id" value from the response (YOUR posts only!)\n3. Paste it here\n\n⚠️ Note: You cannot analyze other accounts\' posts from Business Discovery');
+        return;
+      }
+
+      const mediaType = prompt('Enter media type:\n\n- IMAGE (for photos)\n- VIDEO (for videos)\n- CAROUSEL_ALBUM (for multi-image posts)\n- REELS (for reels)\n\nDefault is IMAGE:', 'IMAGE');
+      if (!mediaType) return;
+
+      const validTypes = ['IMAGE', 'VIDEO', 'CAROUSEL_ALBUM', 'REELS'];
+      if (!validTypes.includes(mediaType.toUpperCase())) {
+        alert(`❌ Invalid media type!\n\nValid types: ${validTypes.join(', ')}`);
+        return;
+      }
+
+      await callAPI(`/api/instagram/media/insights?userId=${userId}&mediaId=${encodeURIComponent(mediaId.trim())}&mediaType=${encodeURIComponent(mediaType.toUpperCase())}`);
+    }
+
+    // Get Audience Demographics
+    async function getAudienceDemographics() {
+      const loading = document.getElementById('loading');
+      const apiResponse = document.getElementById('apiResponse');
+      const responseData = document.getElementById('responseData');
+
+      try {
+        loading.classList.add('active');
+        apiResponse.style.display = 'none';
+
+        responseData.textContent = 'Fetching audience demographics...\n\nNote: Requires 100+ followers. Data may have up to 48-hour delay.';
+        apiResponse.style.display = 'block';
+
+        const response = await fetch(`/api/instagram/audience/insights?userId=${userId}&period=lifetime`);
+        const data = await response.json();
+
+        responseData.textContent = JSON.stringify(data, null, 2);
+      } catch (error) {
+        responseData.textContent = `Error: ${error.message}`;
+      } finally {
+        loading.classList.remove('active');
+        apiResponse.style.display = 'block';
+      }
+    }
+
+    // Get Account Insights with Time Period
+    async function showAccountInsightsPeriod() {
+      const period = prompt('Enter time period (day, week, days_28):', 'week');
+      if (!period) return;
+
+      if (!['day', 'week', 'days_28'].includes(period.toLowerCase())) {
+        alert('Invalid period. Must be: day, week, or days_28');
+        return;
+      }
+
+      const loading = document.getElementById('loading');
+      const apiResponse = document.getElementById('apiResponse');
+      const responseData = document.getElementById('responseData');
+
+      try {
+        loading.classList.add('active');
+        apiResponse.style.display = 'none';
+
+        responseData.textContent = `Fetching account insights for period: ${period}...`;
+        apiResponse.style.display = 'block';
+
+        const response = await fetch(`/api/instagram/insights/period?userId=${userId}&period=${encodeURIComponent(period.toLowerCase())}`);
+        const data = await response.json();
+
+        // Format the response with explanation
+        let metricsAvailable;
+        if (period.toLowerCase() === 'day') {
+          metricsAvailable = 'reach, profile_views, website_clicks, accounts_engaged, total_interactions, likes, comments, shares, saves, replies';
+        } else {
+          // week and days_28
+          metricsAvailable = 'reach, follower_count, profile_views, website_clicks, accounts_engaged, total_interactions, likes, comments, shares, saves, replies';
+        }
+
+        const result = {
+          period: period.toLowerCase(),
+          metricsAvailable: metricsAvailable,
+          note: 'Updated for Meta API v21 (2025) - impressions not available for week/days_28 periods',
+          data: data
+        };
+
+        responseData.textContent = JSON.stringify(result, null, 2);
+      } catch (error) {
+        responseData.textContent = `Error: ${error.message}`;
+      } finally {
+        loading.classList.remove('active');
+        apiResponse.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>
