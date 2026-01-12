@@ -221,8 +221,8 @@ npm start
 
 | Variable | Description | Example |
 |----------|-------------|---------|
-| `INSTAGRAM_APP_ID` | Your Instagram App ID | `123456789012345` |
-| `INSTAGRAM_APP_SECRET` | Your Instagram App Secret | `abcdef1234567890` |
+| `INSTAGRAM_APP_ID` | Your Instagram App ID | `##########` |
+| `INSTAGRAM_APP_SECRET` | Your Instagram App Secret | `##########` |
 | `INSTAGRAM_REDIRECT_URI` | OAuth callback URL | `http://localhost:3000/auth/instagram/callback` |
 | `PORT` | Server port | `3000` |
 | `NODE_ENV` | Environment | `development` or `production` |
